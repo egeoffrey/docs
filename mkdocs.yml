@@ -1,0 +1,14 @@
+site_name: eGeoffrey user documentation
+nav:
+  - 'Welcome': 'index.md'
+  - 'Say hi to him': 'say-hi-to-him/getting-started-guide.md'
+  - 'What is it made of?':
+    - 'To be done': 'what-is-it-made-of/to-be-done.md'
+  - 'Understand it':
+    - 'To be done': 'understand-it/to-be-done.md'
+  - 'Use it':
+    - 'To be done': 'use-it/to-be-done.md'
+theme: 
+  name: material
+extra_css:
+- css/custom.css
