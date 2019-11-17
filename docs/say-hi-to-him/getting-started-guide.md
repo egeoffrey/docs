@@ -73,4 +73,16 @@ The three main parts of the GUI are:
 
 ### Rolling up your sleeves, the CLI
 
-To Be Done
+Even though most of the time you'll interact with eGeoffrey by using your web browser or chatting via instant messaging, sometimes you'll have to ***"get your hands dirty"*** visiting eGeoffrey's accommodation and typing commands to add new skills among other tasks.
+
+Fortunately, eGeoffrey's creators are thoughtful and created a utility called ```egeoffrey-cli``` to make things easier. This tool is available once you enter eGeoffrey's accommodation via [SSH (Secure Shell)](https://www.raspberrypi.org/documentation/remote-access/ssh/).
+
+Once you're in, you might want to invoke the utility like this to get a list of all the options:
+
+```
+$ sudo egeoffrey-cli -d /opt/egeoffrey
+```
+
+where ```/opt/egeoffrey``` is the place where eGeoffrey's belongings are left; change it to suit your preferences if you chose a different place during the installation process:
+
+![eGeoffrey installation process](img/egeoffrey_cli.gif)
