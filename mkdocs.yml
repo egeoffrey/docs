@@ -3,7 +3,7 @@ nav:
   - 'Welcome': 'index.md'
   - 'Say hi to him': 'say-hi-to-him/getting-started-guide.md'
   - 'What is it made of?':
-    - 'To be done': 'what-is-it-made-of/to-be-done.md'
+    - 'Sensors and services': 'what-is-it-made-of/sensors-and-services.md'
   - 'Understand it':
     - 'To be done': 'understand-it/to-be-done.md'
   - 'Use it':
