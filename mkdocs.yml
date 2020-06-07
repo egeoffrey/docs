@@ -1,14 +1,28 @@
-site_name: eGeoffrey user documentation
+site_name: eGeoffrey User Documentation
+site_url: https://www.egeoffrey.com
+repo_url: https://www.egeoffrey.com/#resources
+repo_name: egeoffrey.com
 nav:
   - 'Welcome': 'index.md'
-  - 'Say hi to him': 'say-hi-to-him/getting-started-guide.md'
-  - 'What is it made of?':
-    - 'Sensors and services': 'what-is-it-made-of/sensors-and-services.md'
-  - 'Understand it':
-    - 'To be done': 'understand-it/to-be-done.md'
-  - 'Use it':
-    - 'To be done': 'use-it/to-be-done.md'
+  - 'Installation':
+    - 'Where to Install': 'installation/where.md'
+    - 'Installation process': 'installation/install.md'
+    - 'Troubleshooting': 'installation/troubleshooting.md'
+  - 'Initial Setup': 
+    - 'First Access': 'setup/gui.md'
+    - 'House Setup': 'setup/house.md'
+  - 'Customize eGeoffrey':
+    - 'Typical Workflow': 'customize/workflow.md'
+    - 'Install a Package': 'customize/packages.md'
+    - 'Configure a Service': 'customize/services.md'
+    - 'Add a Sensor': 'customize/sensors.md'
+    - 'Visualize your data': 'customize/pages.md'
+    - 'Configure Rules': 'customize/rules.md'
+  - 'Maintaining it':
+    - 'Upgrades': 'maintain/upgrade.md'
+    - 'User Management': 'maintain/users.md'
 theme: 
   name: material
+google_analytics: ['UA-1633536-8', 'docs.egeoffrey.com']
 extra_css:
 - css/custom.css

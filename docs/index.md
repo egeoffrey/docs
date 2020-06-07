@@ -15,11 +15,11 @@ Not limited to, eGeoffrey's skills can be categorized among the following areas:
 Is this not enough for you? No worries, the best skill eGeoffrey already has is the **ability to learn new skills**. Said this, eGeoffrey skills' are endless and, whatever skills you have in mind, eGeoffrey will learn them and will use them to satisfy your needs with its best smile.
 
 ## User documentation portal
-This documentation portal is aimed at people who want to have its  own eGeoffrey at home with its default skills. If you're thinking of teaching eGeoffrey new skills, you better visit eGeoffrey's training portal.
+This documentation portal is aimed at people who want to have its own eGeoffrey at home with its default skills. If you're thinking of teaching eGeoffrey new skills, you better visit [eGeoffrey's developers portal](https://developer.egeoffrey.com/).
 
-The portal is organized in the following sections:
+The portal is organized in the following sections which follows the typical configuration workflow:
 
-* **Say hi to him.-** this is the starting point for those who want to give it a try; here, eGeoffrey will tell you everything you need in order to create a proper environment for it to deliver its very basic skill set.
-* **What is it made of?.-** you'll make the most of eGeoffrey if you know how to call its different components and how they're organized; all this is presented in this section and it'll give you the foundation to move forward with eGeoffrey.
-* **Understand it.-** once you get the basics, you are ready to learn advanced features to take eGeoffrey to the next level; you'll learn how to customize, extend and adapt eGeoffrey to your needs. Don't feel bad about eGeoffrey, it is here to help you and it's more than happy to do so.
-* **Use it.-** eGeoffrey can do everything for you, but you need to tell it what that is; in this section we share common scenarios where eGeoffrey is helping out other human beings. If you don't find a scenario similar to the one you have in mind, visit the eGeoffrey's community and ask for it, it's very likely someone else has already done it.
+* **Installation**: how to install eGeoffrey in your house on e.g. a Raspberry Pi device
+* **Initial Setup**: overview of the web interface, post-installation tasks and house setup
+* **Customizing your eGeoffrey**: configure your own sensors, add additional capabilities, create your rules 
+* **Maintaining it**: typical maintenance tasks, keep your e-butler up to date
