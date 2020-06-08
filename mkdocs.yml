@@ -11,13 +11,13 @@ nav:
   - 'Initial Setup': 
     - 'First Access': 'setup/gui.md'
     - 'House Setup': 'setup/house.md'
-  - 'Customize eGeoffrey':
-    - 'Typical Workflow': 'customize/workflow.md'
-    - 'Install a Package': 'customize/packages.md'
-    - 'Configure a Service': 'customize/services.md'
-    - 'Add a Sensor': 'customize/sensors.md'
-    - 'Visualize your data': 'customize/pages.md'
-    - 'Configure Rules': 'customize/rules.md'
+  - 'Configure eGeoffrey':
+    - 'Typical Workflow': 'configure/workflow.md'
+    - 'Install a Package': 'configure/packages.md'
+    - 'Configure a Module': 'configure/modules.md'
+    - 'Add a Sensor': 'configure/sensors.md'
+    - 'Visualize your data': 'configure/pages.md'
+    - 'Configure Rules': 'configure/rules.md'
   - 'Maintaining it':
     - 'Upgrades': 'maintain/upgrade.md'
     - 'User Management': 'maintain/users.md'
