@@ -18,9 +18,11 @@ nav:
     - 'Add a Sensor': 'configure/sensors.md'
     - 'Visualize your data': 'configure/pages.md'
     - 'Configure Rules': 'configure/rules.md'
+    - 'Manager your Users': 'configure/users.md'
   - 'Maintaining it':
-    - 'Upgrades': 'maintain/upgrade.md'
-    - 'User Management': 'maintain/users.md'
+    - 'Upgrades': 'maintenance/upgrade.md'
+    - 'Troubleshooting': 'maintenance/troubleshooting.md'
+  - 'I Need Help': 'help.md'
 theme: 
   name: material
 google_analytics: ['UA-1633536-8', 'docs.egeoffrey.com']

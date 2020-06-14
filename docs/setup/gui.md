@@ -1,6 +1,6 @@
 # Web Interface Walkthrough
 
-eGeoffrey's web interface is one of the multiple ways to interact with eGeoffrey and setup its accomomodation; through the web interface, you'll be able to address the following:
+eGeoffrey's web interface is one of the multiple ways to interact with eGeoffrey and setup its accommodation; through the web interface, you'll be able to address the following:
 
 * See messages from eGeoffrey classified by criticality: information, warnings or, if it's something serious, alerts.
 * Display metrics, pictures from webcams, a to-do list, appointments, etcetera you've told eGeoffrey to deal with in advance.
@@ -41,7 +41,7 @@ The three main parts of the web interface are:
                 * "*Database*": eGeoffrey's database status and size
                 * "*Gateway*": get access to eGeoffrey's message bus
                 * "*Advanced Editor*": manually edit any eGeoffrey's YAML configuration files
-                * "*Icons*": icon library to select the name of an icon whenever this is requested by a configuaration wizard
+                * "*Icons*": icon library to select the name of an icon whenever this is requested by a configuration wizard
 
             * "*Help*": get help on eGeoffrey
                

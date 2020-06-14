@@ -3,7 +3,7 @@ Even though eGeoffrey is going to make a lot of things for you, you need to setu
 
 1. **Open a door** to enter eGeoffrey's accommodation; the steps to open a door, commonly called open ***remote access***, to enter eGeoffrey's accommodation (aka *Raspberry/Orange Pi*) are described at [SSH (Secure Shell)](https://www.raspberrypi.org/documentation/remote-access/ssh/).
 
-2. Bring **furnitures and groceries** eGeoffrey likes the most to its new accomodation. Don't worry, these furnitures and grocesies are just *bits and bytes that you can get remotely for free*; remember that eGeoffrey is an electronic butler and it likes this kind of things.
+2. Bring **furnitures and groceries** eGeoffrey likes the most to its new accommodation. Don't worry, these furnitures and groceries are just *bits and bytes that you can get remotely for free*; remember that eGeoffrey is an electronic butler and it likes this kind of things.
 
     In order to bring all this stuff together, **go into the eGeoffrey's accommodation securely** (SSH connection to cross that door) and **tell the magic words** (you better copy and paste the following line :) ):
 
@@ -14,7 +14,7 @@ Even though eGeoffrey is going to make a lot of things for you, you need to setu
 3. **Let the workers do the setup**, but tell them one thing or two to leave the accommodation the way you like for eGeoffrey. They will ask you the following:
 
     - **Where do you want to install eGeoffrey?**, meaning where to leave all those furnitures and groceries for eGeoffrey; ```/opt/egeoffrey``` can be a nice place.
-    - **What is, if any, the hostname of your remote gateway?**, it's all about the name of eGeoffrey's accommodation; hitting enter and leave it blank beacuse it's not relevant at this point.
+    - **What is, if any, the hostname of your remote gateway?**, it's all about the name of eGeoffrey's accommodation; hitting enter and leave it blank because it's not relevant at this point.
 
     The following video shows you how the workers, also called *installer*, do their job and the questions they will ask you:
 
