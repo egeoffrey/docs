@@ -21,5 +21,4 @@ The portal is organized in the following sections which follows the typical conf
 
 * **[Installation](installation/where)**: how to install eGeoffrey in your house on e.g. a Raspberry Pi device
 * **[Initial Setup](setup/gui)**: overview of the web interface, post-installation tasks and house setup
-* **[Customizing your eGeoffrey](configure/workflow)**: configure your own sensors, add additional capabilities, create your rules 
-* **[Maintaining it](maintenance/upgrade)**: typical maintenance tasks, keep your e-butler up to date
+* **[Configuring your eGeoffrey](configure/workflow)**: configure your own sensors, add additional capabilities, create your rules 
