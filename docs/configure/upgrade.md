@@ -8,4 +8,8 @@ Whenever you want/need to upgrade eGeoffrey, you need to login via SSH to the sy
 
 `sudo egeoffrey-cli update [<package_name>]`
 
-If no package name is provided, all the packages will be updated if a new version is available. Please note the command will just download the updated package. In order to apply the changes, run `sudo egeoffrey-cli start` which will restart any updated package.
+If no package name is provided, all the packages will be updated if a new version is available. Please note the command will just download the updated package. 
+
+In order to apply the changes, run `sudo egeoffrey-cli start` which will restart any updated package.
+
+If `egeoffrey-gui` is one of those updated packages, also ensure to clean up your browser cache before visiting the eGeoffrey web interface since the old gui could be cached by the browser.

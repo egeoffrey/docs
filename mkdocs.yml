@@ -18,11 +18,13 @@ nav:
     - 'Add a Sensor': 'configure/sensors.md'
     - 'Visualize your data': 'configure/pages.md'
     - 'Configure Rules': 'configure/rules.md'
-    - 'Manager your Users': 'configure/users.md'
-  - 'Maintaining it':
-    - 'Upgrades': 'maintenance/upgrade.md'
-    - 'Troubleshooting': 'maintenance/troubleshooting.md'
-  - 'I Need Help': 'help.md'
+    - 'Manage your Users': 'configure/users.md'
+    - 'Upgrades': 'configure/upgrade.md'
+    - 'Remote Access': 'configure/remote.md'
+    - 'Multi House Support': 'configure/multi-house.md'
+    - 'Troubleshooting': 'configure/troubleshooting.md'
+  - 'HOW TOs': 'howto.md'
+  - 'Need Help?': 'help.md'
 theme: 
   name: material
 google_analytics: ['UA-1633536-8', 'docs.egeoffrey.com']
