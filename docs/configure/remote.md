@@ -15,7 +15,7 @@ You can even access your eGeoffrey's Web Interface remotely without the need to 
 This service is offered by a component called "Cloud Gateway". Once your local eGeoffrey instance is linked with our Cloud Gateway you can access it wherever you are in the world. Those are the steps to accomplish it:
 
 * First of all, you need to [register an account](/configure/register) with our eGeoffrey Portal. This will allow your local instance to connect to the Cloud Gateway and you to visit your house remotely.
-* Configure your local eGeoffrey to interact with our Cloud Gateway. To do so, run `sudo egeoffrey-cli setup` from the directory where you installed eGeoffrey. You will be asked if you want to access it remotely. Select yes and provide the username or email address and password for the account just created.
+* Configure your local eGeoffrey to interact with our Cloud Gateway. To do so, run `sudo egeoffrey-cli setup` from the directory where you installed eGeoffrey. You will be asked if you want to access it remotely. Select yes and provide email address and password for the account just created.
 * Restart eGeoffrey by running `sudo egeoffrey-cli stop` and `sudo egeoffrey-cli start`.
 * Get the new connetion information by running `sudo egeoffrey-cli summary` to understand how to access eGeoffrey both from the local network and remotely. For remote access, you will get something like the following:
     * Gateway:

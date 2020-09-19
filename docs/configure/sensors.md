@@ -81,7 +81,7 @@ While registering a new sensor or editing an existing one, go and click to the "
 ## Get the latest value stored by a sensor
 
 * Connect to the eGeoffrey web interface, as an admin user and go to "**House**", "**Sensors**" under "**ADMINISTRATION**". Search for a specific sensor;
-* Click on the "**Actions**" button and select "**Refresh Value**". The latest value and timestamp will appear shortly in the right side of the row;
+* Click on the "**Actions**" button and select "**Refresh**". The latest value and timestamp will appear shortly in the right side of the row;
 
 ## Manually set the value to a sensor
 
@@ -95,23 +95,23 @@ While registering a new sensor or editing an existing one, go and click to the "
 Especially if a sensor is storing a timeseries and automatic aggregation is running on a hourly and daily base, you may be interested in having a look at recent and historical data without necessarily build an ad-hoc page. 
 
 * Connect to the eGeoffrey web interface, as an admin user and go to "**House**", "**Sensors**" under "**ADMINISTRATION**". Search for a specific sensor;
-* Click on the "**Actions**" button and select "**Show Graph**". An page showing up latest values, hourly and daily timeseries will be presented;
+* Click on the "**Actions**" button and select "**History**". An page showing up latest values, hourly and daily timeseries will be presented;
 
 ## Delete a sensor
 
 If you want to delete a sensor and all the data associated with it:
 
 * Connect to the eGeoffrey web interface, as an admin user and go to "**House**", "**Sensors**" under "**ADMINISTRATION**". Search for a specific sensor;
-* Click on the "**Actions**" button and select "**Delete Sensor**";
+* Click on the "**Actions**" button and select "**Delete**";
 
 If you instead want to delete any data stored by the sensor but keep the sensor itself:
 
 * Connect to the eGeoffrey web interface, as an admin user and go to "**House**", "**Sensors**" under "**ADMINISTRATION**". Search for a specific sensor;
-* Click on the "**Actions**" button and select "**Empty Database**";
+* Click on the "**Actions**" button and select "**Reset**";
 
 ## Manually apply retention policies
 
 If you want to manually apply retention policies after e.g. having changed it:
 
 * Connect to the eGeoffrey web interface, as an admin user and go to "**House**", "**Sensors**" under "**ADMINISTRATION**". Search for a specific sensor;
-* Click on the "**Actions**" button and select "**Apply Retention Policies**";
+* Click on the "**Actions**" button and select "**Purge**";

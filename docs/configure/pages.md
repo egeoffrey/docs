@@ -2,27 +2,26 @@
 
 An admin can easily customize any page as well as customizing the look & feel.
 
-The "**MY HOUSE**" area of the main menu contains the user-defined pages and it is completely up to you the way you want to organize your contents. It also includes links to default pages automatically added when installing some packages.
+The "**MY PLACE**" area of the main menu contains the user-defined pages and it is completely up to you the way you want to organize your contents. It also includes links to default pages automatically added when installing some packages.
 
 ## Definitions
 
-* **Section**: a section groups together in the main menu one of more menu items. You may want to use sections to group access to pages which are logically linked together. When clicking on the section, it expands, showing up the associated menu items;
-* **Menu Item**: a menu item is a link to a page. It shows up in the main menu under a given section and when clicked makes the associated page loading in the screen;
+* **Folder**: a folder groups together in the main menu one of more menu items. You may want to use folders to group access to pages which are logically linked together. When clicking on the folder, it expands, showing up the associated menu items;
+* **Menu Item**: a menu item is a link to a page. It shows up in the main menu under a given folder and when clicked makes the associated page loading in the screen;
 * **Page**: display sensors' contents to the user. A page is made up of multiple rows and every row have one or more widget (in columns)
 * **Widget**: type of visualization of a given content. Typically you need to configure a sensor first and then associate it to the widget to present its values
 
 ## How to add a new page
 
-* log in as an admin
-* open up an existing page by clicking on a random menu item of the "**MY HOUSE**" area of the main menu
-* click on the "**New Page**" button in the top right of the page
+* Connect to the eGeoffrey web interface, as an admin user and go to "**House**", "**Pages**" under "**ADMINISTRATION**". A list of existing pages will be provided;
+* Click on "**Add a new Page**" button in the top of the page
 * give the page a name identifier and click on "**Save**". Alphanumeric characters only, including underscores and dashes are allowed. Note down this identifier since will be needed when adding a link to the page from the main menu
 * wait a few seconds until the new (empty) page is displayed. Check the URL for ensuring the newly created page has been opened
 * edit the page (see bellow). please note a new page will not automatically show up in the main menu until a menu item linking to it will be added 
 
 ## How to edit a page
 
-* click on the "**Edit Page**" button in the top right of an opened page (please note only pages from the "**MY HOUSE**" area can be edited)
+* Click on the "**Edit Page**" button in the top right of an opened page (please note only pages from the "**MY PLACE**" area can be edited)
 * if you want to add a new row or if the page is empty, click on the "**Add Row**" button in the top right of the page
 * optionally give the row a title (will be displayed just above the widgets)
 * if you want to add a new widget to a row, click on the "**Add Widget**" button nearby the row title:
@@ -31,7 +30,7 @@ The "**MY HOUSE**" area of the main menu contains the user-defined pages and it 
 
         * "**Widget Title**": title of the widget, will show up on top of its content
         * "**Size of the Widget**": how wide the widget is supposed to be, from 1 to 12 (full width). Remember every row has a size of 12 spaces so you can add twelve widgets of size 1, two widgets of size 6, one widget of size 12, etc.
-        * "**Widget Type**": how you want to display the information. See the "*Widget Showcase*" under the "*Examples*" menu section for real examples. As you select the widget type, a new tab specific for the selected type will be added in which you can configure e.g. from which sensor to pick data from, which timeseries to plot, etc. Every widget type has a different and peculiar configuration. The following options are available:
+        * "**Widget Type**": how you want to display the information. See the "*Widget Showcase*" under the "*Examples*" menu folder for real examples. As you select the widget type, a new tab specific for the selected type will be added in which you can configure e.g. from which sensor to pick data from, which timeseries to plot, etc. Every widget type has a different and peculiar configuration. The following options are available:
         
             * *Summary*: display the latest value of a sensor together with min/max of yesterday/today. Useful when you want to see e.g. current temperature and min/max of today and yesterday. Requires the sensor to have a numeric format and an automatic aggregation set which calculates hourly and daily statistics
             * *Value*: display the latest value of a sensor. Useful when you want to see e.g. the current temperature
@@ -51,6 +50,7 @@ The "**MY HOUSE**" area of the main menu contains the user-defined pages and it 
             * *Notifications*: shows list of the latest notifications. It is the same table you get in the Welcome page
             * *Chatbot*: display the interactive chatbot you can ask questions regarding your sensors or trigger configured rules
             * *Slider*: display a range slider. Useful when you want to e.g. change the intensity of a smart light. 
+            * *Heartbeat*: display an elapsed since last heartbeat. Useful when you want to display last time a sensor reported back
             
         * "**Widget Offset**": optionally, if you want the widget to not start from the left side of the screen, from which space has to start
     
@@ -64,16 +64,16 @@ The "**MY HOUSE**" area of the main menu contains the user-defined pages and it 
 
 ## How to add a menu item linking to a page
 
-* ensure you created already a page and you know the page identifier
-* always as an admin, locate the "**Edit Menu**" button at the bottom of the left menu
-* click on "**New Section**" if you want your page to be listed under a new section. If you want to reuse an existing section, skip this step:
+* ensure you created already a page
+* connect to the eGeoffrey web interface, as an admin user and go to "**House**", "**Menu**" under "**ADMINISTRATION**". A list of existing menu folders and items will be provided;
+* click on "**New Folder**" if you want your page to be listed under a new folder. If you want to reuse an existing folder, skip this step:
 
-    * fill in the required section information:
+    * fill in the required folder information:
 
-        * **Section Identifier**: give the section a name identifier. Alphanumeric characters only, including underscores and dashes are allowed. This will be used when configuring a menu item to reference this section
-        * **Text**: enter the text of the section. This is the text that will be displayed in the main menu
+        * **Folder Identifier**: give the folder a name identifier. Alphanumeric characters only, including underscores and dashes are allowed. This will be used when configuring a menu item to reference this folder
+        * **Text**: enter the text of the folder. This is the text that will be displayed in the main menu
         * **Icon**: optionally the [name of the icon](/configure/icons) to display next to the text
-        * **Order**: the order within the "**MY HOUSE**" area this section will be listed. Every section is given an order number and eGeoffrey will display the one with the lowest number first (e.g. if a section has order zero and another has order twenty, the first one will be displayed on top of the other)
+        * **Order**: the order within the "**MY PLACE**" area this folder will be listed. Every folder is given an order number and eGeoffrey will display the one with the lowest number first (e.g. if a folder has order zero and another has order twenty, the first one will be displayed on top of the other)
     
     * click on "**Save**". Wait for a few seconds until your changes are loaded
     
@@ -81,23 +81,23 @@ The "**MY HOUSE**" area of the main menu contains the user-defined pages and it 
 
     * fill in the required menu item information:
 
-        * **Section Identifier**: the section identifier under which you want this menu item to be associated with. The section should already exist
+        * **Folder Identifier**: the folder identifier under which you want this menu item to be associated with. The folder should already exist
         * **Menu Item Identifier**: give the menu item an identifier. Alphanumeric characters only, including underscores and dashes are allowed. 
         * **Text**: enter the text of the menu item. This is the text that will be displayed in the main menu
         * **Page**: the page identifier (should already exist) you want to open when this menu item is clicked
         * **Icon**: optionally the [name of the icon](/configure/icons) to display next to the text
-        * **Order**: the order within the "**MY HOUSE**" area this menu item will be listed within the section. Every menu itrem is given an order number and eGeoffrey will display the one with the lowest number first (e.g. if a menu item has order zero and another has order twenty, the first one will be displayed on top of the other)
+        * **Order**: the order within the "**MY PLACE**" area this menu item will be listed within the folder. Every menu itrem is given an order number and eGeoffrey will display the one with the lowest number first (e.g. if a menu item has order zero and another has order twenty, the first one will be displayed on top of the other)
         * **Authorized Groups**: leave it empty unless you want [only specific group of users to see the menu item](/configure/users)
     
     * click on "**Save**". Wait for a few seconds until your changes are loaded
     
 ## How to edit the main menu
 
-* if you want to edit an existing section, always as an admin, locate the "**Edit Menu**" button at the bottom of the left menu and click on "**Edit Sections**". An edit icon is displayed nearby any section of the "**MY HOUSE**" area. Click on the section you want to edit for the wizard to show up.
-* if you want to edit an existing menu item, always as an admin, locate the "**Edit Menu**" button at the bottom of the left menu and click on "**Edit Sections**". An edit icon is displayed nearby any menu item of the "**MY HOUSE**" area. Click on the menu item you want to edit for the wizard to show up.
+* if you want to edit an existing folder, connect to the eGeoffrey web interface, as an admin user and go to "**House**", "**Menu**" under "**ADMINISTRATION**". A list of existing menu folders and items will be provided;
+* identify the item you want to edit, click on "Actions" and then "Edit"
 
 ## I want to see a different page upon login
 
 If you already logged in eGeoffrey, next time you access the web interface, the browser will remember your credentials and the last page you were visiting. 
 
-But if you are a new user or accessing from a different browser/device, the "Welcome" page is presented by default. If you want new users to see a different page, go to "*House*", "*Settings*" under "*ADMINISTRATION*", click the "Web Interface" tab and set in "Default Page" the page identifier of the page you want to be presented when accessing the web interface
+But if you are a new user or accessing from a different browser/device, the "Welcome" page is presented by default. If you want new users to see a different page, go to "*House*", "*Setup*" under "*ADMINISTRATION*", click the "Web Interface" tab and set in "Default Page" the page identifier of the page you want to be presented when accessing the web interface

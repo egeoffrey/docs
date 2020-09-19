@@ -25,7 +25,7 @@ This help page covers only user management for the web interface, not the one at
 
 ## How to add a new user
 
-* Connect to the eGeoffrey web interface, as an admin user and go to "**House**", "**Settings**" under "**ADMINISTRATION**". 
+* Connect to the eGeoffrey web interface, as an admin user and go to "**House**", "**Users**" under "**ADMINISTRATION**". 
 * Click on the "**Users**" tab 
 * Click on "**New User**" button
 * Type in the username of the new user then click on "Ok"
@@ -39,7 +39,7 @@ This help page covers only user management for the web interface, not the one at
 
 ## How to add a new group
 
-* Connect to the eGeoffrey web interface, as an admin user and go to "**House**", "**Settings**" under "**ADMINISTRATION**". 
+* Connect to the eGeoffrey web interface, as an admin user and go to "**House**", "**Users**" under "**ADMINISTRATION**". 
 * Click on the "**Groups**" tab 
 * Click on "**New Group**" button
 * Type in the username of the new group then click on "Ok"
@@ -49,7 +49,7 @@ This help page covers only user management for the web interface, not the one at
 
 ## How to delete an existing user/group
 
-* Connect to the eGeoffrey web interface, as an admin user and go to "**House**", "**Settings**" under "**ADMINISTRATION**". 
+* Connect to the eGeoffrey web interface, as an admin user and go to "**House**", "**Users**" under "**ADMINISTRATION**". 
 * Click on the "**Users**" or "**Groups**" tab 
 * Select the user/group you want to delete
 * Click on the "**Delete User**"/"**Delete Group**" button
@@ -60,8 +60,8 @@ This help page covers only user management for the web interface, not the one at
 Image you want to have access to a specific page but don't want the rest of your family to do so. What you need to do is the following:
 
 * Configuring different users to belong to different groups. You can use the existing users/groups or create new custom users/groups
-* As an admin, locate the "**Edit Menu**" button at the bottom of the left menu and click on "**Edit Menu Items**" 
-* Select the menu item you want to apply the ACL to
+* As an admin,go to "**House**", "**Menu**" under "**ADMINISTRATION**"
+* Select the menu item you want to apply the ACL to, click on "Actions" then on "Edit"
 * Under "**Authorized Groups**" click on "**Add Group**"
 * Type in the name of the group you want this page to be visible and accessible; multiple groups can be added. If none are listed (the default) every group will be able to access the page
 * Click on the "Save" button and wait for a few seconds for the configuration to be applied. Now only when logged in with a user belonging to one of the authorized group the menu item will be visible

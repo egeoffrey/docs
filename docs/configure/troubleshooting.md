@@ -19,3 +19,7 @@ Something can always go wrong. And usually this is the time to check your logs:
 	* Log in via SSH to the system hiring eGeoffrey
 	* Go to the directory where eGeoffrey is installed
  	* Run the command `sudo egeoffrey-cli logs [<package_name>]`
+    
+## Enable debug output
+
+If something is not working as expected in a specific eGeoffrey component, you can turn debug logging on. To do so, go to "**eGeoffrey**", "**Modules**" under "**ADMINISTRATION**", identify the module you want to enable debug on and check the debug checkbox. No need to restart anything, debug will be enabled straigth away. GO back to you logs and you will see the debug entries.

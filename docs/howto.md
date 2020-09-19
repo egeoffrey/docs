@@ -15,5 +15,8 @@ Please find a list of the most interesting ones below:
 * [Have eGeoffrey keeping an eye on your webcams](https://forum.egeoffrey.com/topic/26/have-egeoffrey-keeping-an-eye-on-your-webcams)
 * [Let eGeoffrey manage your alarm system](https://forum.egeoffrey.com/topic/20/let-egeoffrey-manage-your-alarm-system)
 * [Control your heater with eGeoffrey](https://forum.egeoffrey.com/topic/27/control-your-heater-with-egeoffrey)
+* [Automate your workflows by integrating eGeoffrey with IFTTT](https://forum.egeoffrey.com/topic/59/automate-your-workflows-by-integrating-egeoffrey-with-ifttt)
+* [Create a weather station](https://forum.egeoffrey.com/topic/63/create-a-weather-station)
+
 
 If you have put together something interesting and want to share with other users, feel free to post yout HOW TO in our [Forum](https://forum.egeoffrey.com/category/5/how-tos). 
