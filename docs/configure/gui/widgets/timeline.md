@@ -1,0 +1,22 @@
+# Timeline Widget
+
+Timeline widgets allow to display your data along a timeline so to visually see how the measure has changed along a timeframe. It is useful when you want to see e.g. how the temperature has changed over the last hours or days. 
+
+## Add a new widget
+
+As with any other widget, go to the page you want to add it, click on the "*Edit Page*" button (top right) and then on the "*Add Widget*" button in the row you want to add the widget into.
+
+## Configure/Edit the widget
+
+- **Sensors to Plot**: reference the sensor identifier containing the data you want to add to the timeline. Multiple sensors can be added by clicking the "*Add Sensor*" button. If the sensor is formatted as a number (integer or float), its values will be drawn in the timeline, if it is formatted as a string, the string is assumed to reference a valid icon name and that icon will be be drawn as a label attached to the timeline of first sensor.
+- **Display Aggregated Data**: you can choose if you want to display the values or aggregated data. This configuration applies to all the sensors listed above:
+    - "*Show series with latest measures*": displays directly the measures recorded for the sensors. If e.g. the sensor is storing temperatures and we recorded 10 values in the last hour, all of those will be displayed in the timeline. By the default, up to the latest 4 hours are displayed. 
+    - "*Show series with hourly averages*": displays hourly averages for the sensor. Requires the sensor to be configured with an "Automatic Aggregation" policy which takes care of calculating for every hour averages/minimum/maximum values, otherwise no data will show up. By the default, up to the latest 24 hours are displayed. 
+    - "*Show series with daily averages*": displays daily averages for the sensor. Requires the sensor to be configured with an "Automatic Aggregation" policy which takes care of calculating for every day averages/minimum/maximum values, otherwise no data will show up. By the default, up to the latest 365 days are displayed. 
+- **Chart Style**: the style of the chart. By default is "spline", you can customize it to e.g. "line" or "bar".
+- **Custom Series to Display**: as you know, a sensor can be configured with an "Automatic Aggregation" policy which makes eGeoffrey automatically calculating aggregated additional series on top of the same dataset like for example the "hour", "day" or "sum" series etc. By default, the series to display is selected automatically depending on the "Display Aggregated Data" setting so no need to customize this parameter. But, if for example your sensor is configured to have a "sum" series automatically created for you and you want to display it, simply write "sum" into this box. This configuration applies to all the sensors listed above.
+- **Custom Timeframe**: the timeframe for the widget (e.g. time between the first and last event to display), is automatically selected depending on the way "Display Aggregated Data" is set (defaults are detailed above). But, 
+if for example you want to display a wider/narrow timeframe, provide in the box an input formatted as `last_<number>_<days/hours>` (e.g. "last_24_hours", "last_30_days", etc.). Beware the values actually displayed also depend on the "Retention Policy" set to the sensors. If for example you have set a retention policy which keeps "values for 5 days, hourly averages for 5 days and daily averages forever", even requesting to display the last 30 days for e.g. hourly averages will not be effective since up to 5 days only of data are kept into the database for that specific series.
+- **Range with Min and Max is Displayed for First Sensor. Check for Not Displaying**: if hourly or daily averages are selected in "Display Aggregated Data" and only for the first "Sensor to Plot", in addition to the averages, a range area between minimum and maximum hourly values will be displayed as well. Check this box if you don't want to display this additional series
+
+Bottomline, "Sensors to Plot" tells eGeoffrey which sensors you want to add to the widget, "Display Aggregated Data"/"Custom Series to Display" which series of the data to draw,  "Display Aggregated Data"/"Custom Timeframe" which timeframe to plot and "Chart Style" which style to use.

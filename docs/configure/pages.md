@@ -34,7 +34,7 @@ The "**MY PLACE**" area of the main menu contains the user-defined pages and it 
         
             * *Summary*: display the latest value of a sensor together with min/max of yesterday/today. Useful when you want to see e.g. current temperature and min/max of today and yesterday. Requires the sensor to have a numeric format and an automatic aggregation set which calculates hourly and daily statistics
             * *Value*: display the latest value of a sensor. Useful when you want to see e.g. the current temperature
-            * *Timeline*: display a timeline chart. Useful when you want to see e.g. temperature averages, min/max over a timeline. Requires the sensor to have a numeric format and an automatic aggregation set which calculates hourly and daily statistics
+            * *[Timeline](/configure/gui/widgets/timeline)*: display a timeline chart. Useful when you want to see e.g. temperature averages, min/max over a timeline. Requires the sensor to have a numeric format and an automatic aggregation set which calculates hourly and daily statistics
             * *Range*: display a chart with min and max value. Useful when you want to see e.g. temperature min/max for the next few days. Requires the sensor to have a numeric format and an automatic aggregation set which calculates hourly and daily statistics
             * *Status*: display an on/off status. Useful when you want to see e.g. the status of an actuator (on/off). Requires the sensor to have a integer format and values of 0 and 1
             * *Control*: you can control an on/off switch. Useful when you want to control an actuator (on/off). Requires the sensor to have a integer format and the actuator to handle values of 0 and 1
