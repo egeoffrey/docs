@@ -1,0 +1,977 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://www.egeoffrey.com/configure/sensors/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Add a Sensor - eGeoffrey User Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-1633536-8", "docs.egeoffrey.com")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#sensors" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://www.egeoffrey.com" title="eGeoffrey User Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              eGeoffrey User Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Add a Sensor
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://www.egeoffrey.com/#resources" title="Go to repository" class="md-source" data-md-source="">
+  
+  <div class="md-source__repository">
+    egeoffrey.com
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://www.egeoffrey.com" title="eGeoffrey User Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    eGeoffrey User Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://www.egeoffrey.com/#resources" title="Go to repository" class="md-source" data-md-source="">
+  
+  <div class="md-source__repository">
+    egeoffrey.com
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/where/" title="Where to Install" class="md-nav__link">
+      Where to Install
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/install/" title="Installation process" class="md-nav__link">
+      Installation process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Initial Setup
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Initial Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/gui/" title="First Access" class="md-nav__link">
+      First Access
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/house/" title="House Setup" class="md-nav__link">
+      House Setup
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Configure eGeoffrey
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Configure eGeoffrey
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../workflow/" title="Typical Workflow" class="md-nav__link">
+      Typical Workflow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../packages/" title="Install a Package" class="md-nav__link">
+      Install a Package
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../modules/" title="Configure a Module" class="md-nav__link">
+      Configure a Module
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Add a Sensor
+      </label>
+    
+    <a href="./" title="Add a Sensor" class="md-nav__link md-nav__link--active">
+      Add a Sensor
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    Definition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-new-sensor" class="md-nav__link">
+    Add a new sensor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-sensors-data-gets-populated" class="md-nav__link">
+    How sensors data gets populated
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#associate-a-sensor-to-a-service" class="md-nav__link">
+    Associate a sensor to a service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-the-latest-value-stored-by-a-sensor" class="md-nav__link">
+    Get the latest value stored by a sensor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manually-set-the-value-to-a-sensor" class="md-nav__link">
+    Manually set the value to a sensor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#show-recent-and-historical-data-stored-by-a-sensor" class="md-nav__link">
+    Show recent and historical data stored by a sensor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-a-sensor" class="md-nav__link">
+    Delete a sensor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manually-apply-retention-policies" class="md-nav__link">
+    Manually apply retention policies
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pages/" title="Visualize your data" class="md-nav__link">
+      Visualize your data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rules/" title="Configure Rules" class="md-nav__link">
+      Configure Rules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../users/" title="Manage your Users" class="md-nav__link">
+      Manage your Users
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../upgrade/" title="Upgrades" class="md-nav__link">
+      Upgrades
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mobile/" title="Mobile App" class="md-nav__link">
+      Mobile App
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../backup/" title="Backup & Restore" class="md-nav__link">
+      Backup & Restore
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../remote/" title="Remote Access" class="md-nav__link">
+      Remote Access
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../multi-house/" title="Multi House Support" class="md-nav__link">
+      Multi House Support
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../register/" title="Register an Account" class="md-nav__link">
+      Register an Account
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../examples/" title="Sample Contents" class="md-nav__link">
+      Sample Contents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../howto/" title="HOW TOs" class="md-nav__link">
+      HOW TOs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../help/" title="Need Help?" class="md-nav__link">
+      Need Help?
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    Definition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-new-sensor" class="md-nav__link">
+    Add a new sensor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-sensors-data-gets-populated" class="md-nav__link">
+    How sensors data gets populated
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#associate-a-sensor-to-a-service" class="md-nav__link">
+    Associate a sensor to a service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-the-latest-value-stored-by-a-sensor" class="md-nav__link">
+    Get the latest value stored by a sensor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manually-set-the-value-to-a-sensor" class="md-nav__link">
+    Manually set the value to a sensor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#show-recent-and-historical-data-stored-by-a-sensor" class="md-nav__link">
+    Show recent and historical data stored by a sensor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-a-sensor" class="md-nav__link">
+    Delete a sensor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manually-apply-retention-policies" class="md-nav__link">
+    Manually apply retention policies
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="sensors">Sensors</h1>
+<h2 id="definition">Definition</h2>
+<p>A <em>sensor</em> is a kind of <em>virtual notebook</em> where eGeoffrey write things down to remember what is going on and, when we ask any question, it’s used to display information, trigger an alert to keep us aware of something or whatever we want eGeoffrey to do for us. <em>Sensors</em> range from those with naive functionality such as task lists or city weather conditions to more sophisticated ones such as those tracking what IoT home devices are measuring.</p>
+<p>More technically, in eGeoffrey a sensor is defined as a <strong>dataset, a logical container of one or more values</strong>.</p>
+<ul>
+<li>it can hold just a single piece of data or a timeseries;</li>
+<li>Sensor's values can come from an associated service (e.g. a url with an image, a command to run, etc.), from actions triggered by a rule or from your interaction with widgets on the web interface;</li>
+<li>a sensor is made of an <code>id</code> (e.g. the way the user references it) and additional information like retention policies, associated services, etc.</li>
+</ul>
+<p>First thing you need to do when you want to add additional data into eGeoffrey is adding a new sensor and associating it to a service. <strong>A sensor without a service associated is just a place where the user can store data</strong> (e.g. by acting on the web interface widgets or populated by a rule).</p>
+<p>You can see the configured sensors and create new sensors by accessing the web interface as an admin user and going to "<em>House</em>", "<em>Sensors</em>" under "<em>ADMINISTRATION</em>".</p>
+<h2 id="add-a-new-sensor">Add a new sensor</h2>
+<p>To register a new sensor with eGeoffrey, the process is the follow:</p>
+<ul>
+<li>Connect to the eGeoffrey web interface, as an admin user and go to "<strong>House</strong>", "<strong>Sensors</strong>" under "<strong>ADMINISTRATION</strong>". A list of existing sensors will be provided;</li>
+<li>
+<p>Click on the "<strong>Register New Sensor</strong>" button on top of the page. A wizard will show up. Provide the following information - anything with an asterisk is required:</p>
+<ul>
+<li>
+<p>"<strong>General</strong>" - general settings for the sensor:</p>
+<ul>
+<li>"<strong>Sensor identifier</strong>": give the sensor a name identifier. This is they way the sensor will be referenced by rules, visualization, etc. Alphanumeric characters only, including underscores and dashes are allowed;</li>
+<li>"<strong>Disabled</strong>": check this box if you want the sensor to be disabled; disabled sensors will not be considered by the associated services;</li>
+<li>"<strong>Sensor Description</strong>": optional short description for the sensor;</li>
+<li>"<strong>Sensor Icon</strong>": optional <a href="/configure/icons">name of the icon</a> when displaying the sensor in the list of sensors</li>
+</ul>
+</li>
+<li>
+<p>"<strong>Data</strong>" - settings related to the data stored by this sensor:</p>
+<ul>
+<li>
+<p>"<strong>Format</strong>": the format the data to be stored in this sensor is expected to have (e.g. integer, float, string, image, etc.). This is entirely dependent on the service that will be associated with this sensor. Whenever possible, the input value is normalized before being saved (e.g. if the format is integer and the input value is 2.67, the value that will be saved will be 2). You can choose between:</p>
+<ul>
+<li><em>Integer</em>: if you expect an interger value or if the sensor is a on/off switch (with values 1 or 0)</li>
+<li><em>Float w/ one decimal</em>: if you expect an float value with one decimal (e.g 2.5)</li>
+<li><em>Float w/ two decimal</em>: if you expect an float value with two decimal like (e.g. 2.56)</li>
+<li><em>String</em>: if you expect a string value (e.g. "cloudy")</li>
+<li><em>Calendar</em>: to associate with a <a href="/configure/pages/#how-to-edit-a-page">calendar widget</a> in the web interface for scheduling events</li>
+<li><em>Image</em>: if the value is an image. Typically associated with modules returning images like egeoffrey-service-image</li>
+<li><em>Position</em>: if the value is a a GPS position. Typically associated with modules returning GPS position like egeoffrey-service-earthquake</li>
+<li><em>Tasks</em>: to associate with a <a href="/configure/pages/#how-to-edit-a-page">Tasks - to do list widget</a> when added to the web interface</li>
+</ul>
+</li>
+<li>
+<p>"<strong>Unit</strong>": optionally the unit of measure for the data of this sensor. Will be used in notifications and in visualizations as a suffix to the value (e.g. ppm)</p>
+</li>
+<li>"<strong>Minimum Value</strong>": optional filter to avoid invalid data to be stored. When set, data below this value will be silently discarded;</li>
+<li>"<strong>Maximum Value</strong>": optional filter to avoid invalid data to be stored. When set, data above this value will be silently discarded;</li>
+<li>"<strong>Allowed Values</strong>": optional filter to avoid invalid data to be stored. When set, data different than provided list comma separated will be silently discarded;</li>
+</ul>
+</li>
+<li>
+<p>"<strong>Processing</strong>" - configuration of any automatic processing of the data:</p>
+<ul>
+<li>"<strong>Automatic Aggregation</strong>": if eGoeffrey has to perform any automatic aggregation of the data. For example if you want to automatically calculate every hour/day average, minimum and maximum values for a timeseries dataset. If not set, no aggregation of the data will be performed. Please keep in mind if you want to display <a href="/configure/pages/#how-to-edit-a-page">timeseries data in a widget</a> you would need to configure an aggregation;</li>
+<li>"<strong>Retention Policies</strong>": for how long you want eGeoffrey to store the data in this sensor. E.g. retain values for 5 days, hourly averages for 5 days and daily averages forever (ideal for timeseries) or retain the latest value only (ideal for actuators, status indicators, etc.). For any sensor for which you are interested in the latest value only, please set a retention policy to keep only this value, for any sensor storing timeseries data, please ensure you set an appropriate  retention policy as well to avoid the database to grow indefinetely;</li>
+<li>"<strong>Convert acquired value before being saved</strong>": if the value has to be normalized or converted before being saved (e.g. the service associated can only return a temperature in Celsius and you need to visualize it in Fahrenheit etc.);</li>
+<li>"<strong>Convert input value before being sent to an actuator</strong>": if the sensor is an actuator and the value to be sent through the associated service has to be normalized or converted before being sent (e.g. the actuator can only handle strings "ON" and "OFF" but the sensor is storing integers like 0 and 1);</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="how-sensors-data-gets-populated">How sensors data gets populated</h2>
+<p>There are different ways through which sensors data get populated:</p>
+<ol>
+<li>By <a href="#associate-a-sensor-to-a-service">associating a sensor to a service</a></li>
+<li>By setting manually the <a href="#manually-set-the-value-to-a-sensor">value through the web interface</a></li>
+<li>By associating the sensor to a <a href="/configure/pages">web interface widget</a> and interacting with it</li>
+<li>By <a href="/configure/rules">running a rule</a> whose action set a value to the sensor</li>
+</ol>
+<h2 id="associate-a-sensor-to-a-service">Associate a sensor to a service</h2>
+<p>A sensor without a service associated will just sit there and expect data to be set somehow. But when sensors really come to life is when they are associate to a service which will pull automatically data in or will help interacting with other external devices (e.g. actuators). </p>
+<p>While registering a new sensor or editing an existing one, go and click to the "<strong>Service</strong>" tab and do the following:</p>
+<ul>
+<li>Under "<strong>Associated Service</strong>", select the service you want to associate the sensor with. Please note only running services will show up in the list;</li>
+<li>
+<p>Once selected, a new input called "<strong>How to interact with the service</strong>" will show up. Depending on the service capabilities, you can interact with one or more of the following ways:</p>
+<ul>
+<li>
+<p>"<strong>Pull</strong>": periodically pull the sensor for new data. This applies for example for passive sensors you have to poll or weather service you have to actively query. When selected a new tab called "<strong>Schedule</strong>" will show up for configuring how to poll:</p>
+<ul>
+<li>"<strong>Polling Mode</strong>": select either "Interval - run the job at fixed intervals of time" or "Cron - run the job periodically at certain time(s) of day"</li>
+<li>"<strong>Days/Hours/Minutes/Seconds</strong>": fill in accordingly. If "<strong>Interval</strong>" was selected above, this is the frequency to poll for new data, if "<strong>Cron</strong>" was selected, this is which time and how often to poll</li>
+</ul>
+</li>
+<li>
+<p>"<strong>Push</strong>": the sensor will periodically provide new data. This applies for example for active sensors waking up and providing new data periodically based on their configuration. eGeoffrey just has to sit down, wait for new data and register it. </p>
+</li>
+<li>"<strong>Actuator</strong>": this sensor is indeed an actuator so we do not expect new data to come in but when we set a value to the sensor this is also sent by the module to the physical actuator (e.g. we set 1 to the sensor and the relay turns on)</li>
+</ul>
+</li>
+<li>
+<p>How the sensor has to behave with the service can be configured in the "<strong>Configuration</strong>" tab. A valid service and mode have to be selected before this tab shows up. The configuration screen will be service-dependant. Typically here you will provide e.g. the latitude, longitude and the weather information you want to store like humidity, the node_id, child_id and type of the MySensors sensor to be associated with, etc.</p>
+</li>
+</ul>
+<h2 id="get-the-latest-value-stored-by-a-sensor">Get the latest value stored by a sensor</h2>
+<ul>
+<li>Connect to the eGeoffrey web interface, as an admin user and go to "<strong>House</strong>", "<strong>Sensors</strong>" under "<strong>ADMINISTRATION</strong>". Search for a specific sensor;</li>
+<li>Click on the "<strong>Actions</strong>" button and select "<strong>Refresh</strong>". The latest value and timestamp will appear shortly in the right side of the row;</li>
+</ul>
+<h2 id="manually-set-the-value-to-a-sensor">Manually set the value to a sensor</h2>
+<ul>
+<li>Connect to the eGeoffrey web interface, as an admin user and go to "<strong>House</strong>", "<strong>Sensors</strong>" under "<strong>ADMINISTRATION</strong>". Search for a specific sensor;</li>
+<li>Click on the "<strong>Actions</strong>" button and select "<strong>Set Value</strong>". An input prompt will show up. </li>
+<li>Set the value you want to set and click "<strong>Ok</strong>"</li>
+<li>The new value will then show up on the right side of the row;</li>
+</ul>
+<h2 id="show-recent-and-historical-data-stored-by-a-sensor">Show recent and historical data stored by a sensor</h2>
+<p>Especially if a sensor is storing a timeseries and automatic aggregation is running on a hourly and daily base, you may be interested in having a look at recent and historical data without necessarily build an ad-hoc page. </p>
+<ul>
+<li>Connect to the eGeoffrey web interface, as an admin user and go to "<strong>House</strong>", "<strong>Sensors</strong>" under "<strong>ADMINISTRATION</strong>". Search for a specific sensor;</li>
+<li>Click on the "<strong>Actions</strong>" button and select "<strong>History</strong>". An page showing up latest values, hourly and daily timeseries will be presented;</li>
+</ul>
+<h2 id="delete-a-sensor">Delete a sensor</h2>
+<p>If you want to delete a sensor and all the data associated with it:</p>
+<ul>
+<li>Connect to the eGeoffrey web interface, as an admin user and go to "<strong>House</strong>", "<strong>Sensors</strong>" under "<strong>ADMINISTRATION</strong>". Search for a specific sensor;</li>
+<li>Click on the "<strong>Actions</strong>" button and select "<strong>Delete</strong>";</li>
+</ul>
+<p>If you instead want to delete any data stored by the sensor but keep the sensor itself:</p>
+<ul>
+<li>Connect to the eGeoffrey web interface, as an admin user and go to "<strong>House</strong>", "<strong>Sensors</strong>" under "<strong>ADMINISTRATION</strong>". Search for a specific sensor;</li>
+<li>Click on the "<strong>Actions</strong>" button and select "<strong>Reset</strong>";</li>
+</ul>
+<h2 id="manually-apply-retention-policies">Manually apply retention policies</h2>
+<p>If you want to manually apply retention policies after e.g. having changed it:</p>
+<ul>
+<li>Connect to the eGeoffrey web interface, as an admin user and go to "<strong>House</strong>", "<strong>Sensors</strong>" under "<strong>ADMINISTRATION</strong>". Search for a specific sensor;</li>
+<li>Click on the "<strong>Actions</strong>" button and select "<strong>Purge</strong>";</li>
+</ul>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../modules/" title="Configure a Module" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Configure a Module
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../pages/" title="Visualize your data" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Visualize your data
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

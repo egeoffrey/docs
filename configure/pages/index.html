@@ -1,0 +1,927 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://www.egeoffrey.com/configure/pages/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Visualize your data - eGeoffrey User Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-1633536-8", "docs.egeoffrey.com")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#customizing-the-web-interface" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://www.egeoffrey.com" title="eGeoffrey User Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              eGeoffrey User Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Visualize your data
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://www.egeoffrey.com/#resources" title="Go to repository" class="md-source" data-md-source="">
+  
+  <div class="md-source__repository">
+    egeoffrey.com
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://www.egeoffrey.com" title="eGeoffrey User Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    eGeoffrey User Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://www.egeoffrey.com/#resources" title="Go to repository" class="md-source" data-md-source="">
+  
+  <div class="md-source__repository">
+    egeoffrey.com
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/where/" title="Where to Install" class="md-nav__link">
+      Where to Install
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/install/" title="Installation process" class="md-nav__link">
+      Installation process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Initial Setup
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Initial Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/gui/" title="First Access" class="md-nav__link">
+      First Access
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/house/" title="House Setup" class="md-nav__link">
+      House Setup
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Configure eGeoffrey
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Configure eGeoffrey
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../workflow/" title="Typical Workflow" class="md-nav__link">
+      Typical Workflow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../packages/" title="Install a Package" class="md-nav__link">
+      Install a Package
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../modules/" title="Configure a Module" class="md-nav__link">
+      Configure a Module
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sensors/" title="Add a Sensor" class="md-nav__link">
+      Add a Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Visualize your data
+      </label>
+    
+    <a href="./" title="Visualize your data" class="md-nav__link md-nav__link--active">
+      Visualize your data
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    Definitions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-add-a-new-page" class="md-nav__link">
+    How to add a new page
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-edit-a-page" class="md-nav__link">
+    How to edit a page
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-add-a-menu-item-linking-to-a-page" class="md-nav__link">
+    How to add a menu item linking to a page
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-edit-the-main-menu" class="md-nav__link">
+    How to edit the main menu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-want-to-see-a-different-page-upon-login" class="md-nav__link">
+    I want to see a different page upon login
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rules/" title="Configure Rules" class="md-nav__link">
+      Configure Rules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../users/" title="Manage your Users" class="md-nav__link">
+      Manage your Users
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../upgrade/" title="Upgrades" class="md-nav__link">
+      Upgrades
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mobile/" title="Mobile App" class="md-nav__link">
+      Mobile App
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../backup/" title="Backup & Restore" class="md-nav__link">
+      Backup & Restore
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../remote/" title="Remote Access" class="md-nav__link">
+      Remote Access
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../multi-house/" title="Multi House Support" class="md-nav__link">
+      Multi House Support
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../register/" title="Register an Account" class="md-nav__link">
+      Register an Account
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../examples/" title="Sample Contents" class="md-nav__link">
+      Sample Contents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../howto/" title="HOW TOs" class="md-nav__link">
+      HOW TOs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../help/" title="Need Help?" class="md-nav__link">
+      Need Help?
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    Definitions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-add-a-new-page" class="md-nav__link">
+    How to add a new page
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-edit-a-page" class="md-nav__link">
+    How to edit a page
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-add-a-menu-item-linking-to-a-page" class="md-nav__link">
+    How to add a menu item linking to a page
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-edit-the-main-menu" class="md-nav__link">
+    How to edit the main menu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-want-to-see-a-different-page-upon-login" class="md-nav__link">
+    I want to see a different page upon login
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="customizing-the-web-interface">Customizing the Web Interface</h1>
+<p>An admin can easily customize any page as well as customizing the look &amp; feel.</p>
+<p>The "<strong>MY PLACE</strong>" area of the main menu contains the user-defined pages and it is completely up to you the way you want to organize your contents. It also includes links to default pages automatically added when installing some packages.</p>
+<h2 id="definitions">Definitions</h2>
+<ul>
+<li><strong>Folder</strong>: a folder groups together in the main menu one of more menu items. You may want to use folders to group access to pages which are logically linked together. When clicking on the folder, it expands, showing up the associated menu items;</li>
+<li><strong>Menu Item</strong>: a menu item is a link to a page. It shows up in the main menu under a given folder and when clicked makes the associated page loading in the screen;</li>
+<li><strong>Page</strong>: display sensors' contents to the user. A page is made up of multiple rows and every row have one or more widget (in columns)</li>
+<li><strong>Widget</strong>: type of visualization of a given content. Typically you need to configure a sensor first and then associate it to the widget to present its values</li>
+</ul>
+<h2 id="how-to-add-a-new-page">How to add a new page</h2>
+<ul>
+<li>Connect to the eGeoffrey web interface, as an admin user and go to "<strong>House</strong>", "<strong>Pages</strong>" under "<strong>ADMINISTRATION</strong>". A list of existing pages will be provided;</li>
+<li>Click on "<strong>Add a new Page</strong>" button in the top of the page</li>
+<li>give the page a name identifier and click on "<strong>Save</strong>". Alphanumeric characters only, including underscores and dashes are allowed. Note down this identifier since will be needed when adding a link to the page from the main menu</li>
+<li>wait a few seconds until the new (empty) page is displayed. Check the URL for ensuring the newly created page has been opened</li>
+<li>edit the page (see bellow). please note a new page will not automatically show up in the main menu until a menu item linking to it will be added </li>
+</ul>
+<h2 id="how-to-edit-a-page">How to edit a page</h2>
+<ul>
+<li>Click on the "<strong>Edit Page</strong>" button in the top right of an opened page (please note only pages from the "<strong>MY PLACE</strong>" area can be edited)</li>
+<li>if you want to add a new row or if the page is empty, click on the "<strong>Add Row</strong>" button in the top right of the page</li>
+<li>optionally give the row a title (will be displayed just above the widgets)</li>
+<li>
+<p>if you want to add a new widget to a row, click on the "<strong>Add Widget</strong>" button nearby the row title:</p>
+<ul>
+<li>
+<p>under the "<strong>General</strong>" tab fill in:</p>
+<ul>
+<li>"<strong>Widget Title</strong>": title of the widget, will show up on top of its content</li>
+<li>"<strong>Size of the Widget</strong>": how wide the widget is supposed to be, from 1 to 12 (full width). Remember every row has a size of 12 spaces so you can add twelve widgets of size 1, two widgets of size 6, one widget of size 12, etc.</li>
+<li>
+<p>"<strong>Widget Type</strong>": how you want to display the information. See the "<em>Widget Showcase</em>" under the "<em>Examples</em>" menu folder for real examples. As you select the widget type, a new tab specific for the selected type will be added in which you can configure e.g. from which sensor to pick data from, which timeseries to plot, etc. Every widget type has a different and peculiar configuration. The following options are available:</p>
+<ul>
+<li><em>Summary</em>: display the latest value of a sensor together with min/max of yesterday/today. Useful when you want to see e.g. current temperature and min/max of today and yesterday. Requires the sensor to have a numeric format and an automatic aggregation set which calculates hourly and daily statistics</li>
+<li><em>Value</em>: display the latest value of a sensor. Useful when you want to see e.g. the current temperature</li>
+<li><em><a href="/configure/gui/widgets/timeline">Timeline</a></em>: display a timeline chart. Useful when you want to see e.g. temperature averages, min/max over a timeline. Requires the sensor to have a numeric format and an automatic aggregation set which calculates hourly and daily statistics</li>
+<li><em>Range</em>: display a chart with min and max value. Useful when you want to see e.g. temperature min/max for the next few days. Requires the sensor to have a numeric format and an automatic aggregation set which calculates hourly and daily statistics</li>
+<li><em>Status</em>: display an on/off status. Useful when you want to see e.g. the status of an actuator (on/off). Requires the sensor to have a integer format and values of 0 and 1</li>
+<li><em>Control</em>: you can control an on/off switch. Useful when you want to control an actuator (on/off). Requires the sensor to have a integer format and the actuator to handle values of 0 and 1</li>
+<li><em>Input</em>: display an input box. Useful when you want to set dynamically e.g. the maximum temperature before turning automatically off the heater. Sensors can have any format depending on the use case</li>
+<li><em>Button</em>: display a button and associate actions. Useful when you want to execute one or more actions triggered manually by the user when clicking on the button. Actions may include set values to a sensor, run rules, etc.</li>
+<li><em>Calendar</em>: display a calendar for scheduling event. Useful when you want to e.g. schedule when to turn the heater or irrigation on/off automatically. Requires the sensor to have a "calendar" format and rules to evaluate if it is the time to do an action</li>
+<li><em>Image</em>: display an image stored in a sensor. Useful when you want to e.g. show a screenshot from your webcam. Requires the sensor to have a image format</li>
+<li><em>Map</em>: display a map plotting positions stored in a sensor. Useful when you want to e.g. show on a map your positions or latest earthquake around the world. Requires the sensor to have a "position" format. Before using this widget, please get a  <a href="http://developers.google.com/maps/documentation/embed/get-api-key">Google Maps API key</a> and set it in "<em>House</em>", "<em>Settings</em>" under "<em>ADMINISTRATION</em>", under the "Web Interface" tab</li>
+<li><em>Text</em>: display a text statically or from a sensor. Useful for e.g. adding explanations or static text to your pages</li>
+<li><em>Table</em>: display a dynamic table. Useful when you want to e.g. show on a table the latest news from a RSS feed. Requires the sensor to have a string format. The rows of the table will be the different lines of the string (e.g. rows are split by new line character)</li>
+<li><em>Counter</em>: display a counter with the number of values stored in a sensor</li>
+<li><em>Tasks</em>: display a to-do list. Useful when you want to e.g. have a shopping list where users can add / check items on it. Requires the sensor to have a "tasks" format</li>
+<li><em>Notifications</em>: shows list of the latest notifications. It is the same table you get in the Welcome page</li>
+<li><em>Chatbot</em>: display the interactive chatbot you can ask questions regarding your sensors or trigger configured rules</li>
+<li><em>Slider</em>: display a range slider. Useful when you want to e.g. change the intensity of a smart light. </li>
+<li><em>Heartbeat</em>: display an elapsed since last heartbeat. Useful when you want to display last time a sensor reported back</li>
+</ul>
+</li>
+<li>
+<p>"<strong>Widget Offset</strong>": optionally, if you want the widget to not start from the left side of the screen, from which space has to start</p>
+</li>
+</ul>
+</li>
+<li>
+<p>under "<strong>Permissions</strong>" tab, leave it as it is unless you want <a href="/configure/users">only specific group of users to see the configured widget</a></p>
+</li>
+<li>click on "<strong>Save</strong>", the newly configured widget will show up in the page with live data populated in</li>
+</ul>
+</li>
+<li>
+<p>if needed, delete any unnecessary widgets by clicking on the trash icon in the top right corner of each widget or an entire row by clicking the "<strong>Delete Row</strong>" button nearby each row's title</p>
+</li>
+<li>individual widgets and entire rows can be easily moved around along the page by dragging and dropping the icon with four arrows in the top right corner of each widget or by clicking and moving the "<strong>Move Row</strong>" button nearby each row's title</li>
+<li>when satisfied of the look and feel, click the "<strong>Save Changes</strong>" button in the top right corner of the page. Changes can be undone at any time by clicking on the "<strong>Discard Changes</strong>" button</li>
+<li>once saved, the old layout will still show up. Wait for a few seconds until your changes are loaded</li>
+</ul>
+<h2 id="how-to-add-a-menu-item-linking-to-a-page">How to add a menu item linking to a page</h2>
+<ul>
+<li>ensure you created already a page</li>
+<li>connect to the eGeoffrey web interface, as an admin user and go to "<strong>House</strong>", "<strong>Menu</strong>" under "<strong>ADMINISTRATION</strong>". A list of existing menu folders and items will be provided;</li>
+<li>
+<p>click on "<strong>New Folder</strong>" if you want your page to be listed under a new folder. If you want to reuse an existing folder, skip this step:</p>
+<ul>
+<li>
+<p>fill in the required folder information:</p>
+<ul>
+<li><strong>Folder Identifier</strong>: give the folder a name identifier. Alphanumeric characters only, including underscores and dashes are allowed. This will be used when configuring a menu item to reference this folder</li>
+<li><strong>Text</strong>: enter the text of the folder. This is the text that will be displayed in the main menu</li>
+<li><strong>Icon</strong>: optionally the <a href="/configure/icons">name of the icon</a> to display next to the text</li>
+<li><strong>Order</strong>: the order within the "<strong>MY PLACE</strong>" area this folder will be listed. Every folder is given an order number and eGeoffrey will display the one with the lowest number first (e.g. if a folder has order zero and another has order twenty, the first one will be displayed on top of the other)</li>
+</ul>
+</li>
+<li>
+<p>click on "<strong>Save</strong>". Wait for a few seconds until your changes are loaded</p>
+</li>
+</ul>
+</li>
+<li>
+<p>click on "<strong>New Menu Item</strong>" to eventually make your page accessible from the main menu:</p>
+<ul>
+<li>
+<p>fill in the required menu item information:</p>
+<ul>
+<li><strong>Folder Identifier</strong>: the folder identifier under which you want this menu item to be associated with. The folder should already exist</li>
+<li><strong>Menu Item Identifier</strong>: give the menu item an identifier. Alphanumeric characters only, including underscores and dashes are allowed. </li>
+<li><strong>Text</strong>: enter the text of the menu item. This is the text that will be displayed in the main menu</li>
+<li><strong>Page</strong>: the page identifier (should already exist) you want to open when this menu item is clicked</li>
+<li><strong>Icon</strong>: optionally the <a href="/configure/icons">name of the icon</a> to display next to the text</li>
+<li><strong>Order</strong>: the order within the "<strong>MY PLACE</strong>" area this menu item will be listed within the folder. Every menu itrem is given an order number and eGeoffrey will display the one with the lowest number first (e.g. if a menu item has order zero and another has order twenty, the first one will be displayed on top of the other)</li>
+<li><strong>Authorized Groups</strong>: leave it empty unless you want <a href="/configure/users">only specific group of users to see the menu item</a></li>
+</ul>
+</li>
+<li>
+<p>click on "<strong>Save</strong>". Wait for a few seconds until your changes are loaded</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="how-to-edit-the-main-menu">How to edit the main menu</h2>
+<ul>
+<li>if you want to edit an existing folder, connect to the eGeoffrey web interface, as an admin user and go to "<strong>House</strong>", "<strong>Menu</strong>" under "<strong>ADMINISTRATION</strong>". A list of existing menu folders and items will be provided;</li>
+<li>identify the item you want to edit, click on "Actions" and then "Edit"</li>
+</ul>
+<h2 id="i-want-to-see-a-different-page-upon-login">I want to see a different page upon login</h2>
+<p>If you already logged in eGeoffrey, next time you access the web interface, the browser will remember your credentials and the last page you were visiting. </p>
+<p>But if you are a new user or accessing from a different browser/device, the "Welcome" page is presented by default. If you want new users to see a different page, go to "<em>House</em>", "<em>Setup</em>" under "<em>ADMINISTRATION</em>", click the "Web Interface" tab and set in "Default Page" the page identifier of the page you want to be presented when accessing the web interface</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../sensors/" title="Add a Sensor" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Add a Sensor
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../rules/" title="Configure Rules" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Configure Rules
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

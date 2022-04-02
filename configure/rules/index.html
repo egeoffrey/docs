@@ -1,0 +1,895 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://www.egeoffrey.com/configure/rules/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Configure Rules - eGeoffrey User Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-1633536-8", "docs.egeoffrey.com")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#rules" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://www.egeoffrey.com" title="eGeoffrey User Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              eGeoffrey User Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Configure Rules
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://www.egeoffrey.com/#resources" title="Go to repository" class="md-source" data-md-source="">
+  
+  <div class="md-source__repository">
+    egeoffrey.com
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://www.egeoffrey.com" title="eGeoffrey User Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    eGeoffrey User Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://www.egeoffrey.com/#resources" title="Go to repository" class="md-source" data-md-source="">
+  
+  <div class="md-source__repository">
+    egeoffrey.com
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/where/" title="Where to Install" class="md-nav__link">
+      Where to Install
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/install/" title="Installation process" class="md-nav__link">
+      Installation process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Initial Setup
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Initial Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/gui/" title="First Access" class="md-nav__link">
+      First Access
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/house/" title="House Setup" class="md-nav__link">
+      House Setup
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Configure eGeoffrey
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Configure eGeoffrey
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../workflow/" title="Typical Workflow" class="md-nav__link">
+      Typical Workflow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../packages/" title="Install a Package" class="md-nav__link">
+      Install a Package
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../modules/" title="Configure a Module" class="md-nav__link">
+      Configure a Module
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sensors/" title="Add a Sensor" class="md-nav__link">
+      Add a Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pages/" title="Visualize your data" class="md-nav__link">
+      Visualize your data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Configure Rules
+      </label>
+    
+    <a href="./" title="Configure Rules" class="md-nav__link md-nav__link--active">
+      Configure Rules
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    Definition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-new-rule" class="md-nav__link">
+    Add a new rule
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-a-rule" class="md-nav__link">
+    Disable a rule
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-a-rule" class="md-nav__link">
+    Delete a rule
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manually-run-a-rule" class="md-nav__link">
+    Manually run a rule
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../users/" title="Manage your Users" class="md-nav__link">
+      Manage your Users
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../upgrade/" title="Upgrades" class="md-nav__link">
+      Upgrades
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mobile/" title="Mobile App" class="md-nav__link">
+      Mobile App
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../backup/" title="Backup & Restore" class="md-nav__link">
+      Backup & Restore
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../remote/" title="Remote Access" class="md-nav__link">
+      Remote Access
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../multi-house/" title="Multi House Support" class="md-nav__link">
+      Multi House Support
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../register/" title="Register an Account" class="md-nav__link">
+      Register an Account
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../examples/" title="Sample Contents" class="md-nav__link">
+      Sample Contents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../howto/" title="HOW TOs" class="md-nav__link">
+      HOW TOs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../help/" title="Need Help?" class="md-nav__link">
+      Need Help?
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    Definition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-new-rule" class="md-nav__link">
+    Add a new rule
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-a-rule" class="md-nav__link">
+    Disable a rule
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-a-rule" class="md-nav__link">
+    Delete a rule
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manually-run-a-rule" class="md-nav__link">
+    Manually run a rule
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="rules">Rules</h1>
+<h2 id="definition">Definition</h2>
+<p>Rules can <strong>execute specific tasks periodically or upon specific conditions</strong>.</p>
+<p>A rule is defined as a <strong>set constants (e.g. static values) and variables (e.g. values coming from sensors) combined in conditions</strong>. <strong>Notifications are generated whenever a configured rule triggers</strong>. Rules can also execute additional actions (e.g. set a value to a sensor, trigger another rule, etc.)</p>
+<p>You can see the configured rules and create new rules by accessing the web interface as an admin user and going to "<em>House</em>", "<em>Rules</em>" under "<em>Administration</em>".</p>
+<h2 id="add-a-new-rule">Add a new rule</h2>
+<p>To add a new rule, the process is the following:</p>
+<ul>
+<li>Connect to the eGeoffrey web interface, as an admin user and go to "<strong>House</strong>", "<strong>Rules</strong>" under "<strong>ADMINISTRATION</strong>". A list of existing rules will be provided;</li>
+<li>
+<p>Click on the "<strong>Add a New Rule</strong>" button on top of the page. A wizard will show up. Provide the following information - anything with an asterisk is required:</p>
+<ul>
+<li>
+<p>"<strong>General</strong>" - general settings for the rule:</p>
+<ul>
+<li>"<strong>Rule identifier</strong>": give the rule a name identifier. This is they way the rule can be referenced and invoked by other rules, widgets, etc. Alphanumeric characters only, including underscores and dashes are allowed;</li>
+<li>"<strong>Disabled</strong>": check this box if you want the rule to be disabled;</li>
+<li>"<strong>Rule Text</strong>": text of the rule when triggers. This is what will show up in the web interface under "Notifications" and what will be sent to any configured <a href="/configure/modules/#notifications">notification modules</a>. If you want the text can be dynamically populated with configured variables' values, use placeholders like <code>%variable_identifier%</code></li>
+<li>"<strong>Severity</strong>": the severity of the notification when this rule triggers. This can be used by notification modules to filter in or out specific notifications. Possible values are "Alert", "Warning" and "Info". "Debug" will generate a notification in the web interface but no notification modules will be triggered. "None" will not even generate the notification in the web interface but just produce an entry in the logs</li>
+<li>
+<p>"<strong>Type</strong>" - type of the rule:</p>
+<ul>
+<li>
+<p>"<strong>Recurrent</strong>": the rule will run based on a configured schedule. Select this option if you want this rule to execute only on a specific time like e.g. if you want to turn the lights on or off at a given time. When selected, a "Schedule" tab will show up to configure when and how often running the rule:</p>
+<ul>
+<li>"<strong>Scheduling Mode</strong>": select either "<em>Interval - run the job at fixed intervals of time</em>" or "<em>Cron - run the job periodically at certain time(s) of day</em>"</li>
+<li>"<strong>Days/Hours/Minutes/Seconds</strong>": fill in accordingly. If "<strong>Interval</strong>" was selected above, this is the frequency the rule will run, if "<strong>Cron</strong>" was selected, this is which time and how often to run</li>
+</ul>
+</li>
+<li>
+<p>"<strong>On-Demand</strong>": run the rule manually (or when requested by the chatbot). Select this option if you want to link the rule execution with e.g. a button of the web interface or if you want to run it by asking the chatbot to do something</p>
+</li>
+<li>"<strong>Realtime</strong>": run the rule whenever one of the sensors listed in the "<strong>Triggers</strong>" tab is updated. Select this option if you want this rule to trigger only upon a change. For example if you want to turn the lights on when it is becoming too dark, you want to run this rule every time a light sensor is reporting a new value. After selecting this option, go to the "Triggers" tab, click on "Add Trigger" and write down the sensor identifier which will trigger the rule execution. Whenever a new value is recorded for this sensor, the rule will be evaluated. This doesn't mean a notification will trigger, it just means the conditions will be evaluated. </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>"<strong>Constants</strong>" - if conditions are set, the rule triggers only when those are met. Conditions compare the values of variables (data stored in sensors) with constants (constant values). Conditions reference variables and constants so you need to configured them beforehand. Go to the "<em>Constants</em>" tab and click on "<em>Add Constant</em>". Give the constant an identifier (Alphanumeric characters only, including underscores and dashes are allowed) - this will be the way you can reference it in your conditions - and a value. For example set <code>status_on</code> to 1 so in your conditions you can check if the value of a sensor is on. </p>
+</li>
+<li>
+<p>"<strong>Variables</strong>" - Go to the "<em>Variables</em>" tab and click on "<em>Add Variable</em>". Give the variable an identifier (Alphanumeric characters only, including underscores and dashes are allowed) - this will be the way you can reference it in your conditions - and a sensor identifier as value. This will populate the variable with the latest value of the sensor. There are also additional, more advanced options you can leverage since the variable value can be in the format <code>DISTANCE|TIMESTAMP|ELAPSED|COUNT|SCHEDULE|POSITION_LABEL|POSITION_TEXT] [-&lt;start_position&gt;],[-&lt;end_position&gt;] &lt;sensor_identifier&gt;</code> where:</p>
+<ul>
+<li><code>DISTANCE</code>: set the variable value to the distance from the current position to the lastest value of the referenced sensor identifier. The current position (latitude and longitude) is the one set in the House settings. If "unit" in House settings is set to "metric" the distance is returned in kilometers, otherwise in miles. Requires the sensor to have a "position" format;</li>
+<li><code>TIMESTAMP</code>: set the variable value to the unix timestamp of the lastest value of the referenced sensor identifier;</li>
+<li><code>ELAPSED</code>: set the variable value to the elapsed time in minutes since the latest measure of the referenced sensor identifier (e.g. 1 if last value is 1 minute old);</li>
+<li><code>COUNT</code>: set the variable value to the number of values requested for the referenced sensor identifier;</li>
+<li><code>SCHEDULE</code>: set the variable value to the value set by the user in the associated calendar widget if something has been scheduled for the time the rule runs, an enpty value otherwise. Requires the sensor to have a "calendar" format;</li>
+<li><code>POSITION_LABEL</code>: set the variable value (e.g location) to the label of the latest value of the referenced sensor identifier. Requires the sensor to have a "position" format;</li>
+<li><code>POSITION_TEXT</code>: set the variable value (e.g description) to the text of the latest value of the referenced sensor identifier. Requires the sensor to have a "position" format;</li>
+</ul>
+<p>If no position is requested, the latest value only is evaluated. If you want to retrive e.g. the latest two values, format will be <code>-2,-1 sensor_id</code>.
+For any variable defined here a placeholder in the format <code>%variable_identifier%</code> can be used in the rule's text and will be replaced by its value when the rule triggers. Examples:</p>
+<ul>
+<li><code>alarm_status = alarm/status</code>: <code>alarm_status</code> will be assigned the latest value of the <code>alarm/status/status</code> sensor</li>
+<li><code>boiler_off_minutes = ELAPSED boiler/status</code>: The elapsed time in minutes since the latest measure of <code>boiler/status/status</code> will be assigned to the variable <code>boiler_off_minutes</code></li>
+<li><code>latest_5_days = -5,-1 outdoor/temperature/day/avg</code>: The latest 5 daily averages of the sensor outdoor/temperature will be assigned to the variable <code>latest_5_days</code></li>
+</ul>
+</li>
+<li>
+<p>"<strong>Conditions</strong>" - if no conditions are set, when the rule is run, it will just trigger. Conditions make the rule triggering only under specific circumstances. To add a condition, go to the "Conditions" tab. Conditions can be grouped in block, each block can have one or more conditions. Conditions within the same block will be evaluated in AND (all must meet for the block to be true) whereas block are evaluated in OR (if at least one block is true, the rule triggers). Previously defined constants and variables have to be used when setting up a condition. Please note when doing a comparison, static values are not allowed, they have to be defined as constants. Once again, the rule triggers if all the conditions of a block evaluate to true (AND). If there are multiple blocks the rule triggers when at least one block evaluate true (OR). Click on "Add Block" and then "Add Condition". Here you can compare your previously set constants and variables. The condition has to be in the format <code>&lt;variable_identifier|constant_identifier&gt; [==|!=|&lt;|&gt;|in] &lt;variable_identifier|constant_identifier&gt;</code>.
+Single subexpressions are also allowed on both the sides of the comparison by using parentheses and one of the following operators: <code>+|-|*|/</code>. Examples:</p>
+<ul>
+<li><code>alarm_status == status_on</code>: Check if the variable <code>alarm_status</code> is equals to the constant <code>status_on</code></li>
+<li><code>temperature &gt; threshold</code>: Check if the variable <code>temperature</code> is higher than then constant <code>threshold</code></li>
+<li><code>temperature &gt; (threshold + delta)</code>: Check if the <code>temperature</code> variable is higher than the constants <code>threshold</code> summed to another constant called <code>delta</code></li>
+</ul>
+</li>
+<li>
+<p>"<strong>Macro</strong>" - macro is an advanced concept and not required for basic rules. If you want the same rule to be executed for multiple entities (e.g. different sensors), you can use macros without the need to write the same rule multiple times for different sensors. For example, if you want to be notified whenever the battery of multiple sensors is falling below a given threshold, you can setup a single rule and list as macros all the sensors you want to run this rule against. Go to the "<em>Macro</em>" tab, click on "<em>Add Placeholder</em>" and reference the sensor identifier. Then you can use the <code>%i%</code> placeholder in variables and actions that will be replaced with the sensor's value and the rule will be run in parallel for each instance For example:</p>
+<ul>
+<li><code>alarm/pir/ground_floor</code>: the <code>%i%</code> placeholder is made available in variables and actions and can be used for e.g. referencing other sensors like <code>%i%_armed</code> which will be expanded into <code>alarm/pir/ground_floor_armed</code></li>
+</ul>
+</li>
+<li>
+<p>"<strong>Actions</strong>" - when a rule triggers it will generate a notification without any additional configuration. This will show up in the web interface as well as any other notification module will be triggered. Optionally you may want to configure additional actions to e.g. set values to other sensors, trigger an actuator or trigger other rules. You can either <code>SET</code> a new value to a sensor, <code>POLL</code> a service associated to a sensor, <code>RUN</code> a different rule in the format <code>[SET|POLL|RUN] &lt;sensor_identifier|rule_identifier&gt; [&lt;value&gt;]</code>. Examples:</p>
+<ul>
+<li><code>SET alarm/door/first_floor_armed 1</code>: Set the value of the sensor <code>alarm/door/first_floor_armed</code> to 1</li>
+<li><code>SET irrigation/control/req 1</code>: Turn the irrigation on by triggering the <code>irrigation/control/req</code> actuator</li>
+<li><code>RUN welcome_home</code>: Run the rule with <code>welcome_home</code> identifier</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="disable-a-rule">Disable a rule</h2>
+<p>You can disable a rule from running without deleting it. </p>
+<ul>
+<li>Connect to the eGeoffrey web interface, as an admin user and go to "<strong>House</strong>", "<strong>Rules</strong>" under "<strong>ADMINISTRATION</strong>". </li>
+<li>A list of existing rules will be provided. Search for the rule you want to disable</li>
+<li>Click on the "<strong>Actions</strong>" button and select "Edit Rule". Check the "Disabled" box in the "General" tab and click on "Save".</li>
+</ul>
+<h2 id="delete-a-rule">Delete a rule</h2>
+<ul>
+<li>Connect to the eGeoffrey web interface, as an admin user and go to "<strong>House</strong>", "<strong>Rules</strong>" under "<strong>ADMINISTRATION</strong>". </li>
+<li>A list of existing rules will be provided. Search for the rule you want to disable</li>
+<li>Click on the "<strong>Actions</strong>" button and select "Delete Rule".</li>
+</ul>
+<h2 id="manually-run-a-rule">Manually run a rule</h2>
+<p>To manually run a rule for e.g. testing purposes:</p>
+<ul>
+<li>Connect to the eGeoffrey web interface, as an admin user and go to "<strong>House</strong>", "<strong>Rules</strong>" under "<strong>ADMINISTRATION</strong>". </li>
+<li>A list of existing rules will be provided. Search for the rule you want to disable</li>
+<li>Click on the "<strong>Actions</strong>" button and select "Run Rule".</li>
+</ul>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../pages/" title="Visualize your data" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Visualize your data
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../users/" title="Manage your Users" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Manage your Users
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

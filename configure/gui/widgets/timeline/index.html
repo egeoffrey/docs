@@ -1,0 +1,686 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://www.egeoffrey.com/configure/gui/widgets/timeline/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Timeline Widget - eGeoffrey User Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../../../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../../../css/custom.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-1633536-8", "docs.egeoffrey.com")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#timeline-widget" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://www.egeoffrey.com" title="eGeoffrey User Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              eGeoffrey User Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Timeline Widget
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://www.egeoffrey.com/#resources" title="Go to repository" class="md-source" data-md-source="">
+  
+  <div class="md-source__repository">
+    egeoffrey.com
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://www.egeoffrey.com" title="eGeoffrey User Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    eGeoffrey User Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://www.egeoffrey.com/#resources" title="Go to repository" class="md-source" data-md-source="">
+  
+  <div class="md-source__repository">
+    egeoffrey.com
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../installation/where/" title="Where to Install" class="md-nav__link">
+      Where to Install
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../installation/install/" title="Installation process" class="md-nav__link">
+      Installation process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../installation/troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Initial Setup
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Initial Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../setup/gui/" title="First Access" class="md-nav__link">
+      First Access
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../setup/house/" title="House Setup" class="md-nav__link">
+      House Setup
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Configure eGeoffrey
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Configure eGeoffrey
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../workflow/" title="Typical Workflow" class="md-nav__link">
+      Typical Workflow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../packages/" title="Install a Package" class="md-nav__link">
+      Install a Package
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modules/" title="Configure a Module" class="md-nav__link">
+      Configure a Module
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../sensors/" title="Add a Sensor" class="md-nav__link">
+      Add a Sensor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pages/" title="Visualize your data" class="md-nav__link">
+      Visualize your data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../rules/" title="Configure Rules" class="md-nav__link">
+      Configure Rules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../users/" title="Manage your Users" class="md-nav__link">
+      Manage your Users
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../upgrade/" title="Upgrades" class="md-nav__link">
+      Upgrades
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="Mobile App" class="md-nav__link">
+      Mobile App
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../backup/" title="Backup & Restore" class="md-nav__link">
+      Backup & Restore
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../remote/" title="Remote Access" class="md-nav__link">
+      Remote Access
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../multi-house/" title="Multi House Support" class="md-nav__link">
+      Multi House Support
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../register/" title="Register an Account" class="md-nav__link">
+      Register an Account
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../examples/" title="Sample Contents" class="md-nav__link">
+      Sample Contents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../../howto/" title="HOW TOs" class="md-nav__link">
+      HOW TOs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../../help/" title="Need Help?" class="md-nav__link">
+      Need Help?
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-new-widget" class="md-nav__link">
+    Add a new widget
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configureedit-the-widget" class="md-nav__link">
+    Configure/Edit the widget
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="timeline-widget">Timeline Widget</h1>
+<p>Timeline widgets allow to display your data along a timeline so to visually see how the measure has changed along a timeframe. It is useful when you want to see e.g. how the temperature has changed over the last hours or days. </p>
+<h2 id="add-a-new-widget">Add a new widget</h2>
+<p>As with any other widget, go to the page you want to add it, click on the "<em>Edit Page</em>" button (top right) and then on the "<em>Add Widget</em>" button in the row you want to add the widget into.</p>
+<h2 id="configureedit-the-widget">Configure/Edit the widget</h2>
+<ul>
+<li><strong>Sensors to Plot</strong>: reference the sensor identifier containing the data you want to add to the timeline. Multiple sensors can be added by clicking the "<em>Add Sensor</em>" button. If the sensor is formatted as a number (integer or float), its values will be drawn in the timeline, if it is formatted as a string, the string is assumed to reference a valid icon name and that icon will be be drawn as a label attached to the timeline of first sensor.</li>
+<li><strong>Display Aggregated Data</strong>: you can choose if you want to display the values or aggregated data. This configuration applies to all the sensors listed above:<ul>
+<li>"<em>Show series with latest measures</em>": displays directly the measures recorded for the sensors. If e.g. the sensor is storing temperatures and we recorded 10 values in the last hour, all of those will be displayed in the timeline. By the default, up to the latest 4 hours are displayed. </li>
+<li>"<em>Show series with hourly averages</em>": displays hourly averages for the sensor. Requires the sensor to be configured with an "Automatic Aggregation" policy which takes care of calculating for every hour averages/minimum/maximum values, otherwise no data will show up. By the default, up to the latest 24 hours are displayed. </li>
+<li>"<em>Show series with daily averages</em>": displays daily averages for the sensor. Requires the sensor to be configured with an "Automatic Aggregation" policy which takes care of calculating for every day averages/minimum/maximum values, otherwise no data will show up. By the default, up to the latest 365 days are displayed. </li>
+</ul>
+</li>
+<li><strong>Chart Style</strong>: the style of the chart. By default is "spline", you can customize it to e.g. "line" or "bar".</li>
+<li><strong>Custom Series to Display</strong>: as you know, a sensor can be configured with an "Automatic Aggregation" policy which makes eGeoffrey automatically calculating aggregated additional series on top of the same dataset like for example the "hour", "day" or "sum" series etc. By default, the series to display is selected automatically depending on the "Display Aggregated Data" setting so no need to customize this parameter. But, if for example your sensor is configured to have a "sum" series automatically created for you and you want to display it, simply write "sum" into this box. This configuration applies to all the sensors listed above.</li>
+<li><strong>Custom Timeframe</strong>: the timeframe for the widget (e.g. time between the first and last event to display), is automatically selected depending on the way "Display Aggregated Data" is set (defaults are detailed above). But, 
+if for example you want to display a wider/narrow timeframe, provide in the box an input formatted as <code>last_&lt;number&gt;_&lt;days/hours&gt;</code> (e.g. "last_24_hours", "last_30_days", etc.). Beware the values actually displayed also depend on the "Retention Policy" set to the sensors. If for example you have set a retention policy which keeps "values for 5 days, hourly averages for 5 days and daily averages forever", even requesting to display the last 30 days for e.g. hourly averages will not be effective since up to 5 days only of data are kept into the database for that specific series.</li>
+<li><strong>Range with Min and Max is Displayed for First Sensor. Check for Not Displaying</strong>: if hourly or daily averages are selected in "Display Aggregated Data" and only for the first "Sensor to Plot", in addition to the averages, a range area between minimum and maximum hourly values will be displayed as well. Check this box if you don't want to display this additional series</li>
+</ul>
+<p>Bottomline, "Sensors to Plot" tells eGeoffrey which sensors you want to add to the widget, "Display Aggregated Data"/"Custom Series to Display" which series of the data to draw,  "Display Aggregated Data"/"Custom Timeframe" which timeframe to plot and "Chart Style" which style to use.</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
+      
+    
+  </body>
+</html>
