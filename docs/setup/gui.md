@@ -76,10 +76,8 @@ The login screen request the user the following information:
 
 * **Gateway**: the eGeoffrey Gateway is the main door for accessing eGeoffrey. All eGeoffrey components connects and interact via the gateway, ragardless where they are running:
     * If eGeoffrey is installed in your local network, the hostname is the host or IP address where eGeoffrey is running and by default port is `443` and SSL is disabled;
-    * If connecting to eGeoffrey Cloud Gateway, the hostname is `gateway.egeoffrey.com`, port is `443` and SSL is enabled;
 * **House**: an eGeoffrey instance can take care of multiple houses hence you want to specify which one you want to enter. House ID and passcode are eventually used as username and password for authenticating against the gateway:
     * If eGeoffrey is installed in your local network, by default the House ID is house without any passcode;
-    * If connecting to eGeoffrey Cloud Gateway, the House ID is the e-mail address you used for registering your account and the passcode is your password;
 * **User**: to each house can belong one or multiple users. By default you will be automatically logged in as guest user. The following two users are pre-configured:
     * `guest` / `<no password>`: guest user
     * `admin` / `admin`: admin user

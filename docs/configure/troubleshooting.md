@@ -18,7 +18,7 @@ Something can always go wrong. And usually this is the time to check your logs:
 
 	* Log in via SSH to the system hiring eGeoffrey
 	* Go to the directory where eGeoffrey is installed
- 	* Run the command `sudo egeoffrey-cli logs [<package_name>]`
+ 	* Run the command `sudo egeoffrey-cli house logs [<package_name>]`
     
 ## Enable debug output
 

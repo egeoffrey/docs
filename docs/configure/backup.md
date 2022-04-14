@@ -20,9 +20,9 @@ Feel free to stop eGeoffrey before backing up its data even if there is no risk 
 To restore eGeoffrey in a brand new system:
 
 * Install eGeoffrey as [you would normally do](/installation/install)
-* Stop eGeoffrey with `sudo egeoffrey-cli stop`
+* Stop eGeoffrey with `sudo egeoffrey-cli house stop`
 * Optionally remove the directory just created (e.g. `/opt/egeoffrey`) in case would be in the same location of your backed up data
 * Move the latest backup to the system and, if an archive, uncompress it (e.g. `sudo tar zxfv egeoffrey-backup.tar.gz`) 
 * relocate the directory to the location you prefer (e.g. `/opt/egeoffrey`)
 * Go into the directory (e.g. `cd /opt/egeoffrey`)
-* Start eGeoffrey with `sudo egeoffrey-cli start`. All the packages configured will be then downloaded again and eGeoffrey will be started with the configuration saved in the backup
+* Start eGeoffrey with `sudo egeoffrey-cli house start`. All the packages configured will be then downloaded again and eGeoffrey will be started with the configuration saved in the backup

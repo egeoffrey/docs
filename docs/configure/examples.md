@@ -27,4 +27,4 @@ If you don't want pacakges from deploying examples, do the following (this will 
 * Edit the `.env` file by adding `EGEOFFREY_CONFIG_ACCEPT_DEFAULTS=0`
 * restart eGeoffrey
 
-Please note you need to repeat the process every time `egeoffrey-cli setup` is executed.
+Please note you need to repeat the process every time `egeoffrey-cli config setup` is executed.

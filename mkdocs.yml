@@ -24,7 +24,6 @@ nav:
     - 'Backup & Restore': 'configure/backup.md'
     - 'Remote Access': 'configure/remote.md'
     - 'Multi House Support': 'configure/multi-house.md'
-    - 'Register an Account': 'configure/register.md'
     - 'Sample Contents': 'configure/examples.md'
     - 'Troubleshooting': 'configure/troubleshooting.md'
   - 'HOW TOs': 'howto.md'

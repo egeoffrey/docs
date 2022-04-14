@@ -27,4 +27,4 @@ You can run multiple, independent houses on the same machine by installing eGeof
 
 All the scenarios above imply you want to configure two fully independent houses. A different configuration could be to have the same eGeoffrey instance (e.g. same house) spread across two or more locations. 
 
-This is once again supported as far as the eGeoffrey controller/database/gateway reside only in a primary location and the others are configured with `egeoffrey-cli setup` to connect to the remote gateway offered by the primary location. Of course that gateway must be reachable over the network.
+This is once again supported as far as the eGeoffrey controller/database/gateway reside only in a primary location and the others are configured with `egeoffrey-cli config setup` to connect to the remote gateway offered by the primary location. Of course that gateway must be reachable over the network.

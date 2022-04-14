@@ -14,17 +14,15 @@ Even though eGeoffrey is going to make a lot of things for you, you need to setu
 3. **Let the workers do the setup**, but tell them one thing or two to leave the accommodation the way you like for eGeoffrey. They will ask you the following:
 
     - **Where do you want to install eGeoffrey?**, meaning where to leave all those furnitures and groceries for eGeoffrey; ```/opt/egeoffrey``` can be a nice place.
-    - **What is, if any, the hostname of your remote gateway?**, it's all about the name of eGeoffrey's accommodation; hitting enter and leave it blank because it's not relevant at this point.
 
     The following video shows you how the workers, also called *installer*, do their job and the questions they will ask you:
-
 
     ![eGeoffrey installation process](img/egeoffrey_install.gif)
 
 Once the installation is finished, it could take a while before eGeoffrey fully comes to life. 
 Run the following to ensure every component is reported in a status of "Up" before connecting to the web interface:
 ```
-sudo egeoffrey-cli status
+sudo egeoffrey-cli house status
 ```
 
 Once the workers are done, eGeoffrey is ready to enjoy its new accommodation:
