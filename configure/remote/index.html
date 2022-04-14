@@ -528,6 +528,33 @@
     Web Interface
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vpn-access" class="md-nav__link">
+    VPN Access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expose-egeoffrey-gateway-to-the-internet" class="md-nav__link">
+    Expose eGeoffrey Gateway to the Internet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#host-an-egeoffrey-gateway-in-the-cloud" class="md-nav__link">
+    Host an eGeoffrey Gateway in the Cloud
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -549,18 +576,6 @@
   <li class="md-nav__item">
     <a href="../multi-house/" title="Multi House Support" class="md-nav__link">
       Multi House Support
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../register/" title="Register an Account" class="md-nav__link">
-      Register an Account
     </a>
   </li>
 
@@ -650,6 +665,33 @@
     Web Interface
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vpn-access" class="md-nav__link">
+    VPN Access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expose-egeoffrey-gateway-to-the-internet" class="md-nav__link">
+    Expose eGeoffrey Gateway to the Internet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#host-an-egeoffrey-gateway-in-the-cloud" class="md-nav__link">
+    Host an eGeoffrey Gateway in the Cloud
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -671,37 +713,18 @@
                 
                 <h1 id="accessing-egeoffrey-remotely">Accessing eGeoffrey remotely</h1>
 <p>Even when you are outside of your place you can get in touch with eGeoffrey. This can be done via notifications or by fully accessing eGeoffrey web interface.</p>
-<h4 id="notifications">Notifications</h4>
+<h3 id="notifications">Notifications</h3>
 <p>The notifications can reach you anywhere, also when you are outside your local network. Visit eGeoffrey's <a href="https://marketplace.egeoffrey.com">Marketplace</a> to install the package you need for being notified in the way you like the most (Slack, Email, Telegram, etc.). </p>
 <p>Additionally, with eGeoffrey's <a href="/configure/mobile">Mobile App</a>, you can even get notifications in real time on your smartphone or table.</p>
-<h4 id="web-interface">Web Interface</h4>
-<p>You can even access your eGeoffrey's Web Interface remotely without the need to open any port on your home router or setup a custom VPN. </p>
-<p>This service is offered by a component called "Cloud Gateway". Once your local eGeoffrey instance is linked with our Cloud Gateway you can access it wherever you are in the world. Those are the steps to accomplish it:</p>
-<ul>
-<li>First of all, you need to <a href="/configure/register">register an account</a> with our eGeoffrey Portal. This will allow your local instance to connect to the Cloud Gateway and you to visit your house remotely.</li>
-<li>Configure your local eGeoffrey to interact with our Cloud Gateway. To do so, run <code>sudo egeoffrey-cli setup</code> from the directory where you installed eGeoffrey. You will be asked if you want to access it remotely. Select yes and provide email address and password for the account just created.</li>
-<li>Restart eGeoffrey by running <code>sudo egeoffrey-cli stop</code> and <code>sudo egeoffrey-cli start</code>.</li>
-<li>Get the new connetion information by running <code>sudo egeoffrey-cli summary</code> to understand how to access eGeoffrey both from the local network and remotely. For remote access, you will get something like the following:<ul>
-<li>Gateway:<ul>
-<li>Hostname: gateway.egeoffrey.com</li>
-<li>Port: 443</li>
-<li>Use SSL: yes</li>
-</ul>
-</li>
-<li>House:<ul>
-<li>House ID: [your_email_address]</li>
-<li>Passcode: [your_password]</li>
-</ul>
-</li>
-<li>User:<ul>
-<li>Username: admin or guest</li>
-<li>Password: admin for the admin user, <empty> for guest</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Connect remotely to your instance by either using eGeoffrey Mobile App or pointing your browser to <a href="http://cloud.egeoffrey.com">http://cloud.egeoffrey.com</a> </li>
-</ul>
+<h3 id="web-interface">Web Interface</h3>
+<p>You can access your eGeoffrey gateway remotely through one of the following methods (ordered from low-effort to high-effort approaches). Once the gateway is reachable from the remote location, you can access to it by either using eGeoffrey Mobile App or pointing your browser to <a href="http://cloud.egeoffrey.com">http://cloud.egeoffrey.com</a>.</p>
+<h4 id="vpn-access">VPN Access</h4>
+<p>Setup a VPN (Wireguard, OpenVPN etc.) on your Raspberry and configure a remote connection on your laptop or mobile so to access eGeoffrey like if you were at home.</p>
+<h4 id="expose-egeoffrey-gateway-to-the-internet">Expose eGeoffrey Gateway to the Internet</h4>
+<p>Open port 443 on your router and make it pointing to where eGeoffrey runs. Before doing so, please ensure the gateway has both SSL and a strong password set.</p>
+<h4 id="host-an-egeoffrey-gateway-in-the-cloud">Host an eGeoffrey Gateway in the Cloud</h4>
+<p>Setup a MQTT broker accessible from the Internet or leverage a public MQTT service (be concious sensitive information regarding your house are exchanged with this third party). Configure then your local gateway to connect to it by setting <code>REMOTE_EGEOFFREY_GATEWAY_HOSTNAME</code>, <code>REMOTE_EGEOFFREY_GATEWAY_PORT</code>, <code>REMOTE_EGEOFFREY_GATEWAY_SSL</code>, <code>REMOTE_EGEOFFREY_ID</code>, <code>REMOTE_EGEOFFREY_PASSCODE</code> with <code>egeoffrey-cli config env &lt;variable&gt; [&lt;value&gt;]</code> so to bridge the two instances.</p>
+<p><em>An additional option called eGeoffrey Cloud Gateway provided by the eGeoffrey team as a service has been suspended in April 2022</em></p>
                 
                   
                 

@@ -566,18 +566,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../register/" title="Register an Account" class="md-nav__link">
-      Register an Account
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../examples/" title="Sample Contents" class="md-nav__link">
       Sample Contents
     </a>
@@ -693,18 +681,18 @@
 <p>After installing, eGeoffrey knows nothing about your house yet. eGeoffrey's customization is really simple and leverages a set of pre-built modular components for integrating with your existing devices. The process is the following:</p>
 <ul>
 <li>Think about <strong>what you want to do</strong> (e.g. get temperature measures from the Internet, trigger a MySensors relay, etc.) and what you need to integrate to achieve your goal;</li>
-<li>Visit the eGeoffrey <a href="https://marketplace.egeoffrey.com/">Marketplace</a> or use the CLI (e.g. <code>sudo egeoffrey-cli search weather</code>) to <strong>identify the package providing the capability</strong> you are looking for;</li>
-<li><strong>Install the relevant package</strong> by running <code>sudo egeoffrey-cli install &lt;package_name&gt;</code> (e.g. <code>sudo egeoffrey-cli install egeoffrey-service-openweathermap</code>). This should be very fast since it will just install the package without starting it yet;</li>
-<li><strong>Start the newly installed package</strong> by running <code>sudo egeoffrey-cli start</code> from within the directory where eGeoffrey is installed. This command will download any newly installed packages and start the ones not running yet;</li>
-<li>Wait a few seconds for the module provided by the package to be up and running. <strong>Check if running</strong> by executing <code>sudo egeoffrey-cli status</code> that all of them are in a status of "<em>Up</em>";</li>
+<li>Visit the eGeoffrey <a href="https://marketplace.egeoffrey.com/">Marketplace</a> or use the CLI (e.g. <code>sudo egeoffrey-cli package search weather</code>) to <strong>identify the package providing the capability</strong> you are looking for;</li>
+<li><strong>Install the relevant package</strong> by running <code>sudo egeoffrey-cli package install &lt;package_name&gt;</code> (e.g. <code>sudo egeoffrey-cli package install egeoffrey-service-openweathermap</code>). This should be very fast since it will just install the package without starting it yet;</li>
+<li><strong>Start the newly installed package</strong> by running <code>sudo egeoffrey-cli house start</code> from within the directory where eGeoffrey is installed. This command will download any newly installed packages and start the ones not running yet;</li>
+<li>Wait a few seconds for the module provided by the package to be up and running. <strong>Check if running</strong> by executing <code>sudo egeoffrey-cli house status</code> that all of them are in a status of "<em>Up</em>";</li>
 <li>Connect to the eGeoffrey web interface, as an admin user and go to "<em>eGeoffrey</em>", "<em>Packages</em>" under "<em>ADMINISTRATION</em>". <strong>Ensure the package has been installed succesfully</strong> and take a note of the provided services;</li>
 </ul>
 <h2 id="uninstall-a-package">Uninstall a package</h2>
 <p>If you want to uninstall a package from eGeoffrey, do the following:</p>
 <ul>
-<li><strong>Identify the name of the package</strong> you want to uninstall. Run <code>sudo egeoffrey-cli list_installed</code> from within the directory where eGeoffrey is installed to get a list of the installed packages;</li>
-<li><strong>Uninstall the package</strong> by running <code>sudo egeoffrey-cli uninstall &lt;package_name&gt;</code> (e.g. <code>sudo egeoffrey-cli uninstall egeoffrey-service-openweathermap</code>). This should be very fast since it will just remove the package from the configuration without stopping it;</li>
-<li><strong>Apply the newly updated configuration</strong> by running <code>sudo egeoffrey-cli start</code> from within the directory where eGeoffrey is installed. This command will stop any packages uninstalled with the CLI. Please note neither the configuration nor the package itself will be deleted from the disk;</li>
+<li><strong>Identify the name of the package</strong> you want to uninstall. Run <code>sudo egeoffrey-cli package installed</code> from within the directory where eGeoffrey is installed to get a list of the installed packages;</li>
+<li><strong>Uninstall the package</strong> by running <code>sudo egeoffrey-cli package uninstall &lt;package_name&gt;</code> (e.g. <code>sudo egeoffrey-cli package uninstall egeoffrey-service-openweathermap</code>). This should be very fast since it will just remove the package from the configuration without stopping it;</li>
+<li><strong>Apply the newly updated configuration</strong> by running <code>sudo egeoffrey-cli house start</code> from within the directory where eGeoffrey is installed. This command will stop any packages uninstalled with the CLI. Please note neither the configuration nor the package itself will be deleted from the disk;</li>
 </ul>
                 
                   

@@ -523,18 +523,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configure/register/" title="Register an Account" class="md-nav__link">
-      Register an Account
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../configure/examples/" title="Sample Contents" class="md-nav__link">
       Sample Contents
     </a>
@@ -629,7 +617,6 @@
 <p><strong>Let the workers do the setup</strong>, but tell them one thing or two to leave the accommodation the way you like for eGeoffrey. They will ask you the following:</p>
 <ul>
 <li><strong>Where do you want to install eGeoffrey?</strong>, meaning where to leave all those furnitures and groceries for eGeoffrey; <code>/opt/egeoffrey</code> can be a nice place.</li>
-<li><strong>What is, if any, the hostname of your remote gateway?</strong>, it's all about the name of eGeoffrey's accommodation; hitting enter and leave it blank because it's not relevant at this point.</li>
 </ul>
 <p>The following video shows you how the workers, also called <em>installer</em>, do their job and the questions they will ask you:</p>
 <p><img alt="eGeoffrey installation process" src="../img/egeoffrey_install.gif" /></p>
@@ -637,7 +624,7 @@
 </ol>
 <p>Once the installation is finished, it could take a while before eGeoffrey fully comes to life. 
 Run the following to ensure every component is reported in a status of "Up" before connecting to the web interface:</p>
-<pre><code>sudo egeoffrey-cli status
+<pre><code>sudo egeoffrey-cli house status
 </code></pre>
 
 <p>Once the workers are done, eGeoffrey is ready to enjoy its new accommodation:</p>

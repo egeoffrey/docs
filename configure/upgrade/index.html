@@ -523,18 +523,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../register/" title="Register an Account" class="md-nav__link">
-      Register an Account
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../examples/" title="Sample Contents" class="md-nav__link">
       Sample Contents
     </a>
@@ -614,9 +602,9 @@
 <p>eGeoffrey, like any other piece of software, evolves over the time with new capabilities added and bugs fixed.</p>
 <p>When you login to the web interface, automatically eGeoffrey checks if there is any of the installed packages requiring to be updated and notifies you straight away. If you feel this behaviour to be annoying, go to "<em>House</em>", "<em>Settings</em>" under "<em>ADMINISTRATION</em>", click the "Web Interface" tab and uncheck the box "Check for Updates at Login".</p>
 <p>Whenever you want/need to upgrade eGeoffrey, you need to login via SSH to the system hosting eGeoffrey (upgrades are not possible through the web interface) and run:</p>
-<p><code>sudo egeoffrey-cli update [&lt;package_name&gt;]</code></p>
+<p><code>sudo egeoffrey-cli package update [&lt;package_name&gt;]</code></p>
 <p>If no package name is provided, all the packages will be updated if a new version is available. Please note the command will just download the updated package. </p>
-<p>In order to apply the changes, run <code>sudo egeoffrey-cli start</code> which will restart any updated package.</p>
+<p>In order to apply the changes, run <code>sudo egeoffrey-cli house start</code> which will restart any updated package.</p>
 <p>If <code>egeoffrey-gui</code> is one of those updated packages, also ensure to clean up your browser cache before visiting the eGeoffrey web interface since the old gui could be cached by the browser.</p>
                 
                   

@@ -573,18 +573,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../register/" title="Register an Account" class="md-nav__link">
-      Register an Account
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../examples/" title="Sample Contents" class="md-nav__link">
       Sample Contents
     </a>
@@ -712,7 +700,7 @@ eGeoffrey fully supports this scenario.</p>
 <p>You can run multiple, independent houses on the same machine by installing eGeoffrey in two different locations of the filesystem. Just ensure in the <code>docker-compose.yml</code> file that each instance will expose their services to different ports.</p>
 <h2 id="running-egeoffrey-in-multiple-locations">Running eGeoffrey in multiple locations</h2>
 <p>All the scenarios above imply you want to configure two fully independent houses. A different configuration could be to have the same eGeoffrey instance (e.g. same house) spread across two or more locations. </p>
-<p>This is once again supported as far as the eGeoffrey controller/database/gateway reside only in a primary location and the others are configured with <code>egeoffrey-cli setup</code> to connect to the remote gateway offered by the primary location. Of course that gateway must be reachable over the network.</p>
+<p>This is once again supported as far as the eGeoffrey controller/database/gateway reside only in a primary location and the others are configured with <code>egeoffrey-cli config setup</code> to connect to the remote gateway offered by the primary location. Of course that gateway must be reachable over the network.</p>
                 
                   
                 
@@ -749,13 +737,13 @@ eGeoffrey fully supports this scenario.</p>
           </a>
         
         
-          <a href="../register/" title="Register an Account" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../examples/" title="Sample Contents" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Register an Account
+                Sample Contents
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
